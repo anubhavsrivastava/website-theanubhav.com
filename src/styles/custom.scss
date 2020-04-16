@@ -1,0 +1,28 @@
+@import "bootstrap/scss/bootstrap.scss";
+
+.main-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10vh;
+  min-height: 100vh;
+  .subheading {
+    display: flex;
+    width: 30vw;
+    margin-top: 30px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+h1 {
+  &.huge {
+    font-size: 20vh;
+    line-height: 22vh;
+    font-family: Palatino, serif;
+  }
+
+  &.bold {
+    font-weight: 900;
+  }
+}
