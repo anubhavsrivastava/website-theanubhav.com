@@ -28,6 +28,17 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
+                    "gatsby-remark-relative-images",
+                    {
+                        resolve: "gatsby-remark-images",
+                        options: {
+                            maxWidth: 960,
+                            withWebp: true,
+                            ignoreFileExtensions: [],
+                        },
+                    },
+                    "gatsby-remark-autolink-headers",
+
                     {
                         resolve: `gatsby-remark-prismjs`,
                         options: {
@@ -41,9 +52,14 @@ module.exports = {
                     {
                         resolve: "gatsby-remark-emojis",
                     },
+                    "gatsby-remark-copy-linked-files",
+                    "gatsby-remark-smartypants",
+                    "gatsby-remark-external-links",
                 ],
             },
         },
+        "gatsby-transformer-sharp",
+        "gatsby-plugin-sharp",
         {
             resolve: `gatsby-plugin-google-analytics`,
             options: {

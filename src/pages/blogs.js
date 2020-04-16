@@ -24,8 +24,8 @@ const HomePage = ({
                     content={site.siteMetadata.description}
                 />
             </Helmet>
-            <HeroHeader />
-            <h2>Blog Posts &darr;</h2>
+            {/* <HeroHeader /> */}
+            {/* <h2>Blog Posts</h2> */}
             <div className="grids">{Posts}</div>
         </Layout>
     );

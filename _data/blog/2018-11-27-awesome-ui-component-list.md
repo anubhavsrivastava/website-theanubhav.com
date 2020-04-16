@@ -23,9 +23,10 @@ draft: false
 ---
 
 <!-- <div align="center">
-
-	<img  src="/img/avatars/avatar-awesome.png" alt="Awesome" />
+    <img  src="img/avatars/avatar-awesome.png" alt="Awesome" />
 </div> -->
+
+![Awesome](./img/avatars/avatar-awesome.png)
 
 # What is `awesome lists`?
 
