@@ -11,7 +11,6 @@ export default function Template({
 }) {
     const { markdownRemark, site } = data; // data.markdownRemark holds your post data
     const { frontmatter, html } = markdownRemark;
-    console.log(site);
     const {
         date,
         path,
@@ -21,16 +20,22 @@ export default function Template({
         gist,
         categories,
         tag,
+        ghrepo,
     } = frontmatter;
 
+    let user = "";
+    let repo = "";
+    if (ghrepo) {
+        [user, repo] = ghrepo.split("/");
+    }
     let disqusConfig = {
         url: `${site.siteMetadata.siteUrl + location.pathname}`,
         title: title,
     };
+
     return (
-        <Layout>
+        <Layout title={frontmatter.title}>
             <Helmet>
-                <title>{frontmatter.title}</title>
                 <meta name="description" content={frontmatter.subtitle} />
             </Helmet>
             <div className="blog-post-container">
@@ -59,6 +64,45 @@ export default function Template({
                                     Posted on {date}
                                 </span>
                             </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div className="row">
+                        <div id="header-gh-btns">
+                            {ghrepo ? (
+                                <>
+                                    <iframe
+                                        src={`https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=star&count=true`}
+                                        frameBorder="0"
+                                        scrolling="0"
+                                        width="120px"
+                                        height="20px"
+                                    ></iframe>
+                                    <iframe
+                                        src={`https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=watch&v=2&count=true`}
+                                        frameBorder="0"
+                                        scrolling="0"
+                                        width="120px"
+                                        height="20px"
+                                    ></iframe>
+                                    <iframe
+                                        src={`https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=fork&count=true`}
+                                        frameBorder="0"
+                                        scrolling="0"
+                                        width="120px"
+                                        height="20px"
+                                    ></iframe>
+                                    <iframe
+                                        src={`https://ghbtns.com/github-btn.html?user=${user}&type=follow&count=true`}
+                                        frameBorder="0"
+                                        scrolling="0"
+                                        width="220px"
+                                        height="20px"
+                                    ></iframe>
+                                </>
+                            ) : (
+                                ""
+                            )}
                         </div>
                     </div>
                     <br />
@@ -107,6 +151,7 @@ export const pageQuery = graphql`
                 gist
                 categories
                 tag
+                ghrepo
             }
         }
     }
