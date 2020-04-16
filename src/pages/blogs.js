@@ -23,12 +23,6 @@ const HomePage = ({
                     name="description"
                     content={site.siteMetadata.description}
                 />
-                {!site.siteMetadata.w3l_dom_key ? null : (
-                    <meta
-                        name="w3l-domain-verification"
-                        content={site.siteMetadata.w3l_dom_key}
-                    />
-                )}
             </Helmet>
             <HeroHeader />
             <h2>Blog Posts &darr;</h2>

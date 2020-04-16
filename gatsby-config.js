@@ -15,8 +15,6 @@ module.exports = {
             title: `Hi! I'm Anubhav`,
             description: `I have been specifically designed to become a digital home for designers and developers, help them build amazing professional looking websites with ease. You don't have to worry about nitty gritty of web hosting services to run a blog and yet take full advantage of CMS to manage content :)`,
         },
-        /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
-        w3l_dom_key: `xyz`,
     },
     plugins: [
         {
@@ -50,7 +48,7 @@ module.exports = {
             resolve: `gatsby-plugin-google-analytics`,
             options: {
                 // The property ID; the tracking code won't be generated without it
-                trackingId: "UA-441",
+                trackingId: "UA-45109327-2",
                 head: true,
             },
         },
