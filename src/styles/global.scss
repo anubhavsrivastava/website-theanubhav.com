@@ -1,5 +1,8 @@
 $primary-color: #624ad0;
 $primary-text-color: #fff;
+:root {
+    --primary-color: #624ad0;
+}
 
 html,
 body {
@@ -109,8 +112,9 @@ a {
     background: white;
     line-height: 1.5;
     > .blog-post-content {
-        max-width: 768px;
-        margin: 0 auto;
+        // max-width: 768px;
+        max-width: 1024px;
+        margin: 4em auto;
     }
     > .blog-post-content *:last-child,
     > *:last-child {

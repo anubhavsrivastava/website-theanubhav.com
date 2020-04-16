@@ -10,7 +10,7 @@ export default function Layout({ children, title }) {
     return (
         <>
             <SEO title={title} />
-            <div className="site-wrapper">
+            <div>
                 <Header />
                 {children}
                 <Footer />

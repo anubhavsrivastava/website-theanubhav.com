@@ -55,6 +55,12 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-plugin-disqus`,
+            options: {
+                shortname: `theanubhav`,
+            },
+        },
+        {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: `theAnubhav's Work`,

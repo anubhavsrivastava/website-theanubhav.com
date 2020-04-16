@@ -1,0 +1,7 @@
+:not(pre) > code[class*="language-text"] {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: var(--primary-color);
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
