@@ -5,12 +5,19 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
+const siteConfig = {
+    title: `theAnubhav`,
+    author: "Anubhav Srivastava",
+    description: `theAnubhav - Showcase for Anubhav's work, blogs and projects`,
+    siteUrl: `https://theanubhav.com/`,
+};
+
 module.exports = {
     siteMetadata: {
-        title: `theAnubhav`,
-        author: "Anubhav Srivastava",
-        description: `theAnubhav - Showcase for Anubhav's work, blogs and projects`,
-        siteUrl: `https://theanubhav.com/`,
+        title: siteConfig.title,
+        author: siteConfig.author,
+        description: siteConfig.description,
+        siteUrl: siteConfig.siteUrl,
         home: {
             title: `Hi! I'm Anubhav`,
             description: `I have been specifically designed to become a digital home for designers and developers, help them build amazing professional looking websites with ease. You don't have to worry about nitty gritty of web hosting services to run a blog and yet take full advantage of CMS to manage content :)`,
@@ -24,6 +31,70 @@ module.exports = {
                 path: `${__dirname}/_data`,
             },
         },
+        {
+            resolve: "gatsby-plugin-feed",
+            options: {
+                query: `
+                {
+                  site {
+                    siteMetadata {
+                      siteUrl
+                      title
+                      description
+                    }
+                  }
+                }
+              `,
+                feeds: [
+                    {
+                        serialize: ({ query: { site, allMarkdownRemark } }) =>
+                            allMarkdownRemark.edges.map((edge) => ({
+                                description: edge.node.frontmatter.subtitle,
+                                date: edge.node.frontmatter.date,
+                                url:
+                                    site.siteMetadata.siteUrl +
+                                    edge.node.frontmatter.path,
+                                guid:
+                                    site.siteMetadata.siteUrl +
+                                    edge.node.frontmatter.path,
+                                custom_elements: [
+                                    {
+                                        "content:encoded":
+                                            edge.node.frontmatter.gist,
+                                    },
+                                ],
+                            })),
+                        query: `
+                    {
+                      allMarkdownRemark(
+                        limit: 1000,
+                        sort: { order: DESC, fields: [frontmatter___date] },
+                        filter: { frontmatter: { template: { eq: "BlogPost" }, draft: { ne: true } } }
+                      ) {
+                        edges {
+                          node {
+                            html 
+                            frontmatter {
+                              title
+                              date
+                              gist
+                              template
+                              draft
+                              path
+                              subtitle
+                            }
+                          }
+                        }
+                      }
+                    }
+                  `,
+                        output: "/rss.xml",
+                        title: siteConfig.title,
+                    },
+                ],
+            },
+        },
+
         {
             resolve: `gatsby-transformer-remark`,
             options: {
@@ -89,6 +160,38 @@ module.exports = {
         `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-netlify-cms`,
+        {
+            resolve: "gatsby-plugin-sitemap",
+            options: {
+                query: `
+                {
+                  site {
+                    siteMetadata {
+                      siteUrl
+                    }
+                  }
+                  allSitePage(
+                    filter: {
+                      path: { regex: "/^(?!/404/|/404.html|/dev-404-page/)/" }
+                    }
+                  ) {
+                    edges {
+                      node {
+                        path
+                      }
+                    }
+                  }
+                }
+              `,
+                output: "/sitemap.xml",
+                serialize: ({ site, allSitePage }) =>
+                    allSitePage.edges.map((edge) => ({
+                        url: site.siteMetadata.siteUrl + edge.node.path,
+                        changefreq: "daily",
+                        priority: 0.7,
+                    })),
+            },
+        },
         "gatsby-plugin-offline",
     ],
 };

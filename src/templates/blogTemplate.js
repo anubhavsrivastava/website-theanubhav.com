@@ -29,7 +29,7 @@ export default function Template({
         [user, repo] = ghrepo.split("/");
     }
     let disqusConfig = {
-        url: `${site.siteMetadata.siteUrl + location.pathname}`,
+        url: `${site.siteMetadata.siteUrl + path}`,
         title: title,
     };
 

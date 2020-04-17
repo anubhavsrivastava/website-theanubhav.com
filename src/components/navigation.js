@@ -70,7 +70,9 @@ export default class Navigation extends Component {
                                 <a className="nav-link">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link">Blog</a>
+                                <a href="/blogs" className="nav-link">
+                                    Blog
+                                </a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link">
