@@ -11,17 +11,7 @@ export default function Template({
 }) {
     const { markdownRemark, site } = data; // data.markdownRemark holds your post data
     const { frontmatter, html } = markdownRemark;
-    const {
-        date,
-        path,
-        title,
-        thumbnail,
-        subtitle,
-        gist,
-        categories,
-        tag,
-        ghrepo,
-    } = frontmatter;
+    const { date, path, title, subtitle, ghrepo } = frontmatter;
 
     let user = "";
     let repo = "";
@@ -38,6 +28,7 @@ export default function Template({
             <Helmet>
                 <meta name="description" content={frontmatter.subtitle} />
             </Helmet>
+
             <div className="blog-post-container">
                 <div className="container">
                     <div className="row">
@@ -68,46 +59,49 @@ export default function Template({
                     </div>
                     <br />
                     <div className="row">
-                        <div id="header-gh-btns">
-                            {ghrepo ? (
-                                <>
-                                    <iframe
-                                        src={`https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=star&count=true`}
-                                        frameBorder="0"
-                                        scrolling="0"
-                                        width="120px"
-                                        height="20px"
-                                    ></iframe>
-                                    <iframe
-                                        src={`https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=watch&v=2&count=true`}
-                                        frameBorder="0"
-                                        scrolling="0"
-                                        width="120px"
-                                        height="20px"
-                                    ></iframe>
-                                    <iframe
-                                        src={`https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=fork&count=true`}
-                                        frameBorder="0"
-                                        scrolling="0"
-                                        width="120px"
-                                        height="20px"
-                                    ></iframe>
-                                    <iframe
-                                        src={`https://ghbtns.com/github-btn.html?user=${user}&type=follow&count=true`}
-                                        frameBorder="0"
-                                        scrolling="0"
-                                        width="220px"
-                                        height="20px"
-                                    ></iframe>
-                                </>
-                            ) : (
-                                ""
-                            )}
+                        <div className="col-lg-12 col-md-10">
+                            <div id="header-gh-btns">
+                                {ghrepo ? (
+                                    <>
+                                        <iframe
+                                            src={`https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=star&count=true`}
+                                            frameBorder="0"
+                                            scrolling="0"
+                                            width="120px"
+                                            height="20px"
+                                        ></iframe>
+                                        <iframe
+                                            src={`https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=watch&v=2&count=true`}
+                                            frameBorder="0"
+                                            scrolling="0"
+                                            width="120px"
+                                            height="20px"
+                                        ></iframe>
+                                        <iframe
+                                            src={`https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=fork&count=true`}
+                                            frameBorder="0"
+                                            scrolling="0"
+                                            width="120px"
+                                            height="20px"
+                                        ></iframe>
+                                        <iframe
+                                            src={`https://ghbtns.com/github-btn.html?user=${user}&type=follow&count=true`}
+                                            frameBorder="0"
+                                            scrolling="0"
+                                            width="220px"
+                                            height="20px"
+                                        ></iframe>
+                                    </>
+                                ) : (
+                                    ""
+                                )}
+                            </div>
                         </div>
                     </div>
                     <br />
                     <div className="row">
-                        {/* {!frontmatter.thumbnail && (
+                        <div className="col-lg-12 col-md-10">
+                            {/* {!frontmatter.thumbnail && (
                         <div className="post-thumbnail">
                             <h1 className="post-title">{frontmatter.title}</h1>
                             <div className="post-meta">{frontmatter.date}</div>
@@ -124,7 +118,8 @@ export default function Template({
                             <div className="post-meta">{frontmatter.date}</div>
                         </div>
                     )} */}
-                        <div dangerouslySetInnerHTML={{ __html: html }} />
+                            <div dangerouslySetInnerHTML={{ __html: html }} />
+                        </div>
                     </div>
                     <Disqus config={disqusConfig} />
                 </div>

@@ -2,7 +2,7 @@
 template: BlogPost
 path: /2019/06/10/up-your-js-sort-game/
 date: 2019-06-10T14:59:36.571Z
-title: Make you JS - Array `sort` game strong!
+title: Make your JS - Array `sort` game strong!
 subtitle: Digging deeper into Array.prototype.sort function.
 avatar: /img/avatars/avatar-js.png
 gist: >-

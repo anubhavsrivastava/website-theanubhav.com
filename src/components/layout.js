@@ -1,6 +1,5 @@
 import React from "react";
 // import { Link, useStaticQuery, graphql } from "gatsby";
-import "../styles/custom.scss";
 import Header from "./Header";
 import Footer from "./Footer";
 import SEO from "./seo";

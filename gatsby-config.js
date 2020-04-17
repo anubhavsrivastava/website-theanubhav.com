@@ -32,6 +32,12 @@ module.exports = {
             },
         },
         {
+            resolve: "gatsby-plugin-typography",
+            options: {
+                pathToConfigModule: "src/styles/typography/typography.js",
+            },
+        },
+        {
             resolve: "gatsby-plugin-feed",
             options: {
                 query: `

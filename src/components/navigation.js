@@ -67,7 +67,9 @@ export default class Navigation extends Component {
                     >
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <a className="nav-link">Home</a>
+                                <a href="/" className="nav-link">
+                                    Home
+                                </a>
                             </li>
                             <li className="nav-item">
                                 <a href="/blogs" className="nav-link">
@@ -75,7 +77,12 @@ export default class Navigation extends Component {
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link">
+                                <a
+                                    target="_blank"
+                                    href="https://devtips.theanubhav.com"
+                                    rel="noopener noreferrer"
+                                    className="nav-link"
+                                >
                                     DevTips <ExternalLink size="12" />
                                 </a>
                             </li>

@@ -1,7 +1,9 @@
 $primary-color: #624ad0;
 $primary-text-color: #fff;
+
 :root {
     --primary-color: #624ad0;
+    --primary-dark: #332282;
 }
 
 html,
@@ -22,7 +24,8 @@ a {
     color: $primary-color;
     text-decoration: none;
     &:hover {
-        text-decoration: underline;
+        color: var(--primary-dark);
+        text-decoration: none;
     }
 }
 .site-wrapper {

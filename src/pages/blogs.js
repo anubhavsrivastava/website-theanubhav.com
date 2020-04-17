@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import PostLink from "../components/post-link";
-import HeroHeader from "../components/heroHeader";
+// import HeroHeader from "../components/heroHeader";
 
 const HomePage = ({
     data: {
@@ -13,7 +13,13 @@ const HomePage = ({
 }) => {
     const Posts = edges
         .filter((edge) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-        .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
+        .map((edge) => (
+            <div key={edge.node.id} className="row">
+                <div className="col-lg-12 col-md-10">
+                    <PostLink post={edge.node} />
+                </div>
+            </div>
+        ));
 
     return (
         <Layout>
@@ -24,9 +30,22 @@ const HomePage = ({
                     content={site.siteMetadata.description}
                 />
             </Helmet>
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 col-md-10">
+                        <div className="page-heading">
+                            <hr className="small" />
+                            <h4 className="page-subheading">
+                                This is where I tell what I am upto!
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* <HeroHeader /> */}
             {/* <h2>Blog Posts</h2> */}
-            <div className="grids">{Posts}</div>
+            <div className="container">{Posts}</div>
         </Layout>
     );
 };
@@ -58,6 +77,10 @@ export const pageQuery = graphql`
                         path
                         title
                         thumbnail
+                        subtitle
+                        gist
+                        tag
+                        categories
                     }
                 }
             }

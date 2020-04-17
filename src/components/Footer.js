@@ -47,7 +47,7 @@ export default function Footer() {
                         </a>
                     </li>
                     <li className="list-inline-item">
-                        <a target="_blank" rel="noopener noreferrer">
+                        <a href="/rss.xml">
                             <Rss size="24" />
                         </a>
                     </li>

@@ -12,7 +12,7 @@ const IndexPage = () => {
     //     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
     return (
-        <Layout title="Home2">
+        <Layout title="Home">
             <Helmet>
                 <meta
                     name="description"
