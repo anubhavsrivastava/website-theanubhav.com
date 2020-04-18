@@ -71,11 +71,11 @@ export default class Navigation extends Component {
                                     Home
                                 </a>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <a href="/blogs" className="nav-link">
                                     Blog
                                 </a>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <a
                                     target="_blank"
@@ -84,6 +84,16 @@ export default class Navigation extends Component {
                                     className="nav-link"
                                 >
                                     DevTips <ExternalLink size="12" />
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a
+                                    target="_blank"
+                                    href="https://about.theanubhav.com"
+                                    rel="noopener noreferrer"
+                                    className="nav-link"
+                                >
+                                    About me <ExternalLink size="12" />
                                 </a>
                             </li>
                         </ul>

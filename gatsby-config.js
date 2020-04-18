@@ -158,11 +158,11 @@ module.exports = {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: `theAnubhav's Work`,
-                short_name: `WorkSalad`,
+                short_name: `theAnubhav.com`,
                 start_url: `/`,
-                background_color: `#663399`,
-                theme_color: `#663399`,
-                display: `minimal-ui`,
+                background_color: `#1821ba`,
+                theme_color: `#1821ba`,
+                display: `theAnubhav.com`,
                 icon: `src/images/site-icon.png`, // This path is relative to the root of the site.
             },
         },
