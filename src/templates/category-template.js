@@ -11,7 +11,6 @@ const CategoryTemplate = (para) => {
         },
         pageContext,
     } = para;
-    console.log(para);
     const Posts = edges
         .filter((edge) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
         .map((edge) => (
