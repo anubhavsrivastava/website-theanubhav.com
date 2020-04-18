@@ -160,8 +160,8 @@ module.exports = {
                 name: `theAnubhav's Work`,
                 short_name: `theAnubhav.com`,
                 start_url: `/`,
-                background_color: `#1821ba`,
-                theme_color: `#1821ba`,
+                background_color: `#624ad0`,
+                theme_color: `#624ad0`,
                 display: `fullscreen`,
                 icon: `src/images/site-icon.png`, // This path is relative to the root of the site.
             },
