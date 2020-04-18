@@ -37,7 +37,7 @@ const HomePage = ({
 
 export default HomePage;
 export const pageQuery = graphql`
-    query BlogPageQuery {
+    query IndexPageQuery {
         site {
             siteMetadata {
                 title
