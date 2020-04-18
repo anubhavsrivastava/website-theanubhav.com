@@ -26,7 +26,7 @@ draft: false
     <img  src="img/avatars/avatar-awesome.png" alt="Awesome" />
 </div> -->
 
-![Awesome](./img/avatars/avatar-awesome.png)
+![Awesome](./avatar-awesome.png)
 
 # What is `awesome lists`?
 

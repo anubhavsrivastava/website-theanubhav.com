@@ -58,7 +58,7 @@ Same is the case with technical debts. The difference being, no theoretical mean
 
 Understanding what part of missing piece is technical debt rather than product debt is essential. Let us consider this aspect with a product example. Consider this blog site, has set of limited articles(as of now). There is this feature associated with articles about approximate reading time like "~5 min read" or "10 min read", on blogging sites like medium/wordpress, which helps user to judge it. Either mark it as a bookmark, or keep it in one of hundred tabs in browser, or read it now, or get a coffee before starting to read, or simply move from chair to couch for comfortably reading it. It is established feature that helps the user on such a blogging site. Something like shown in the pic,
 
-![Read length feature image](/img/post/dont-delay-time-feature.png "Read length")
+![Read length feature image](/dont-delay-time-feature.png "Read length")
 
 This blogging site does not have this feature for now (as of now, but will eventually). This is simple product debt and not technical. We may not choose it to implement at all. But learning that this is an urgent requirement, I may choose to implement it statically, i.e each article at the top would have static indication '10 min read' based on article length and average words read by user, say each 50 words add up to 1 minute. This implementation seems to be technical debt. Because I can on a heuristic manner, add this to each article.
 
