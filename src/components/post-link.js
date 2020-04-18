@@ -1,8 +1,10 @@
 import React from "react";
+import { kebabCase } from "lodash";
+
 // import { Link } from "gatsby";
 
 const PostLink = ({ post }) => {
-    const { date, path, title, subtitle, gist } = post.frontmatter;
+    const { date, path, title, subtitle, gist, tag } = post.frontmatter;
     return (
         <article className="post-preview">
             <p className="post-meta">Posted on {date}</p>
@@ -16,8 +18,13 @@ const PostLink = ({ post }) => {
 
             <div className="blog-tags">
                 Tags:
-                <a href="/tags#JavaScript">JavaScript</a>
-                <a href="/tags#Code">Code</a>
+                {tag.map((t) => {
+                    return (
+                        <a key={t} href={`/tag/${kebabCase(t)}`}>
+                            {t}
+                        </a>
+                    );
+                })}
             </div>
         </article>
         // <article className="card ">

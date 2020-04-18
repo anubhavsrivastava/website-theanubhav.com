@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import "../styles/prismjs/custom.css";
 import "prismjs/themes/prism.css";
 import { Disqus } from "gatsby-plugin-disqus";

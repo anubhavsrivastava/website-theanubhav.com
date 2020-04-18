@@ -1,15 +1,17 @@
+// @flow strict
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+import Helmet from "react-helmet";
 import Layout from "../components/Layout";
 import PostLink from "../components/post-link";
 
-const HomePage = ({
-    data: {
-        site,
-        allMarkdownRemark: { edges },
-    },
-}) => {
+const TagTemplate = (para) => {
+    const {
+        data: {
+            allMarkdownRemark: { edges },
+        },
+        pageContext,
+    } = para;
     const Posts = edges
         .filter((edge) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
         .map((edge) => (
@@ -21,33 +23,22 @@ const HomePage = ({
         ));
 
     return (
-        <Layout title="Blogs" pageTitle="This is where I tell what I am upto!">
-            <Helmet>
-                <meta
-                    name="description"
-                    content={site.siteMetadata.description}
-                />
-            </Helmet>
-
-            {/* <h2>Blog Posts</h2> */}
+        <Layout
+            title={`Tag: ${pageContext.tag}`}
+            pageTitle={`Tag : ${pageContext.tag}`}
+        >
             <div className="container">{Posts}</div>
         </Layout>
     );
 };
 
-export default HomePage;
-export const pageQuery = graphql`
-    query BlogPageQuery {
-        site {
-            siteMetadata {
-                title
-                description
-            }
-        }
+export const query = graphql`
+    query TagPageList($tag: String) {
         allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
             filter: {
                 frontmatter: {
+                    tag: { in: [$tag] }
                     template: { eq: "BlogPost" }
                     draft: { ne: true }
                 }
@@ -56,19 +47,16 @@ export const pageQuery = graphql`
             edges {
                 node {
                     id
-                    excerpt(pruneLength: 250)
                     frontmatter {
-                        date(formatString: "MMMM DD, YYYY")
-                        path
                         title
-                        thumbnail
-                        subtitle
-                        gist
+                        path
+                        date
                         tag
-                        categories
                     }
                 }
             }
         }
     }
 `;
+
+export default TagTemplate;
