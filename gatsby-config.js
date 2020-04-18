@@ -162,7 +162,7 @@ module.exports = {
                 start_url: `/`,
                 background_color: `#1821ba`,
                 theme_color: `#1821ba`,
-                display: `theAnubhav.com`,
+                display: `fullscreen`,
                 icon: `src/images/site-icon.png`, // This path is relative to the root of the site.
             },
         },
