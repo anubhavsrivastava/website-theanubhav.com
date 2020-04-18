@@ -96,6 +96,9 @@ module.exports = {
                   `,
                         output: "/rss.xml",
                         title: siteConfig.title,
+                        link: siteConfig.siteUrl,
+                        site_url: siteConfig.siteUrl,
+                        generator: siteConfig.siteUrl,
                     },
                 ],
             },
@@ -165,7 +168,7 @@ module.exports = {
         },
         `gatsby-plugin-sass`,
         `gatsby-plugin-react-helmet`,
-        `gatsby-plugin-netlify-cms`,
+        // `gatsby-plugin-netlify-cms`,
         {
             resolve: "gatsby-plugin-sitemap",
             options: {
