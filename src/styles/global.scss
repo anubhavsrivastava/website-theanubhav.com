@@ -4,6 +4,8 @@ $primary-text-color: #fff;
 :root {
     --primary-color: #624ad0;
     --primary-dark: #332282;
+    --primary-text-color: #fff;
+    --primary-dark-text-color: #fff;
 }
 
 html,
@@ -18,7 +20,8 @@ body {
 body {
     background-color: #fff;
     //background-color: #fff;
-    border-top: 5px solid $primary-color;
+    border-top: 2px solid $primary-color;
+    border-bottom: 2px solid $primary-color;
 }
 a {
     color: $primary-color;

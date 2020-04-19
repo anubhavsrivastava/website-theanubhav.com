@@ -60,3 +60,16 @@ table tr th :last-child,
 table tr td :last-child {
     margin-bottom: 0;
 }
+
+.theme-bg {
+    background-color: var(--primary-color); // #e0dbf6;
+    a {
+        color: var(--primary-text-color);
+    }
+    .nav-item {
+        a {
+            color: var(--primary-text-color);
+        }
+        margin-bottom: 0;
+    }
+}

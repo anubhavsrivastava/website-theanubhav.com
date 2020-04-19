@@ -7,7 +7,6 @@ export default class Navigation extends Component {
         super(props);
         this.state = {
             openMenu: false,
-            visibilityClass: "",
         };
     }
 
@@ -18,13 +17,7 @@ export default class Navigation extends Component {
     handleScroll = () => {
         const { visibilityClass } = this.state;
         if (window.pageYOffset > 300) {
-            if (visibilityClass !== "navbar-shrink") {
-                this.setState({ visibilityClass: "navbar-shrink" });
-            }
         } else {
-            if (visibilityClass === "navbar-shrink") {
-                this.setState({ visibilityClass: "" });
-            }
         }
     };
 
@@ -39,10 +32,7 @@ export default class Navigation extends Component {
     render() {
         const { openMenu, visibilityClass } = this.state;
         return (
-            <nav
-                className={`navbar navbar-expand-lg navbar-light ${visibilityClass}`}
-                id="mainNav"
-            >
+            <nav className={`navbar navbar-expand-lg theme-bg`} id="mainNav">
                 <div className="container">
                     <a className="navbar-brand"></a>
                     <button
