@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import { Link } from "gatsby";
-import { ExternalLink } from "react-feather";
+import { ExternalLink, Menu } from "react-feather";
 
 export default class Navigation extends Component {
     constructor(props) {
@@ -55,7 +55,7 @@ export default class Navigation extends Component {
                         aria-expanded={openMenu}
                         aria-label="Toggle navigation"
                     >
-                        Menu
+                        <Menu size="24" />
                         <i className="fas fa-bars"></i>
                     </button>
 
