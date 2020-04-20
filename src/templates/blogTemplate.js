@@ -24,12 +24,12 @@ export default function Template({
     };
 
     return (
-        <Layout title={frontmatter.title}>
+        <Layout title={title}>
             <Helmet>
                 <meta name="description" content={frontmatter.subtitle} />
             </Helmet>
 
-            <div className="blog-post-container">
+            <div className="blog-post-container mt-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 col-md-10">

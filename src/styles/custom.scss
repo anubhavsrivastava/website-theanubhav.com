@@ -73,3 +73,11 @@ table tr td :last-child {
         margin-bottom: 0;
     }
 }
+
+ul li {
+    margin-left: 2em;
+}
+
+li > ul {
+    margin-left: unset;
+}
