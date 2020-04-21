@@ -12,8 +12,10 @@ export default function Layout({ children, title, pageTitle }) {
             <SEO title={title} />
             <div>
                 <Header />
-                <PageTitle title={pageTitle} />
-                {children}
+                <div className="main-content">
+                    <PageTitle title={pageTitle} />
+                    {children}
+                </div>
                 <Footer />
             </div>
         </>

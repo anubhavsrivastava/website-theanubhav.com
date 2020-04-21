@@ -1,11 +1,11 @@
 @import "bootstrap/scss/bootstrap.scss";
 @import "postlist.css";
 .main-content {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 10vh;
-    min-height: 100vh;
+    // display: flex;
+    // align-items: flex-end;
+    // justify-content: center;
+    // padding-bottom: 10vh;
+    min-height: calc(100vh - 200px);
     .subheading {
         display: flex;
         width: 30vw;
