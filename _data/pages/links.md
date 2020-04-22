@@ -1,6 +1,6 @@
 ---
 template: Page
-path: /link
+path: /links
 title: 🔗 Links
 draft: false
 ---

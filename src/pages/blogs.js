@@ -1,12 +1,10 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PostLink from "../components/post-link";
 
 const HomePage = ({
     data: {
-        site,
         allMarkdownRemark: { edges },
     },
 }) => {
@@ -22,13 +20,6 @@ const HomePage = ({
 
     return (
         <Layout title="Blogs" pageTitle="This is where I tell what I am upto!">
-            <Helmet>
-                <meta
-                    name="description"
-                    content={site.siteMetadata.description}
-                />
-            </Helmet>
-
             {/* <h2>Blog Posts</h2> */}
             <div className="container">{Posts}</div>
         </Layout>
@@ -38,12 +29,6 @@ const HomePage = ({
 export default HomePage;
 export const pageQuery = graphql`
     query BlogPageQuery {
-        site {
-            siteMetadata {
-                title
-                description
-            }
-        }
         allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
             filter: {

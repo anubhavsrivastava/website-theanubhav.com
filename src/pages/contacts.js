@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 const ContactPage = ({ data: { site } }) => {
     return (
         <Layout title="Contact">
-            <Helmet>
+            {/* <Helmet>
                 <title>Contact — {site.siteMetadata.title}</title>
                 <meta
                     name="description"
@@ -71,7 +71,7 @@ const ContactPage = ({ data: { site } }) => {
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> */}
         </Layout>
     );
 };
