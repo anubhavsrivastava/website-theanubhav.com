@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import gatsbylist from "./gatsby.json";
-import { GitHub } from "react-feather";
+import GitHubButton from "react-github-btn";
 const GatsbyStartersPage = () => {
     return (
         <Layout title="Gatsby Starters">
@@ -29,16 +29,17 @@ const GatsbyStartersPage = () => {
                         </p>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-lg-12 col-md-10">
+                <div className="row ">
+                    <div className="col-md-12 justify-content-md-center">
                         {gatsbylist.map((g) => {
                             let [proto, blank, domain, repo] = g.url.split("/");
+                            let user = domain.split(".")[0];
                             return (
                                 <div key={g.url} className="card project-card">
                                     <div
                                         className="card-img project-card-img"
                                         style={{
-                                            "background-image": `url(${g.repo}/blob/master/src/assets/img/demo.png?raw=true)`,
+                                            backgroundImage: `url(${g.repo}/blob/master/src/assets/img/demo.png?raw=true)`,
                                         }}
                                     >
                                         <div className="overlay">
@@ -57,22 +58,24 @@ const GatsbyStartersPage = () => {
                                     <div className="project-card-content">
                                         <div className="main-card-content">
                                             <div className="clearfix">
-                                                <img
-                                                    className="no-margin float-left"
-                                                    alt="GitHub stars"
-                                                    src={`https://img.shields.io/github/stars/${
-                                                        domain.split(".")[0]
-                                                    }/${repo}.svg?style=social&amp;label=Star&amp;maxAge=2592000`}
-                                                    style={{ maxWidth: "100%" }}
-                                                ></img>
-                                                <img
-                                                    className="no-margin float-right"
-                                                    alt="GitHub stars"
-                                                    src={`https://img.shields.io/github/forks/${
-                                                        domain.split(".")[0]
-                                                    }/${repo}.svg?style=social&amp;label=Star&amp;maxAge=2592000`}
-                                                    style={{ maxWidth: "100%" }}
-                                                ></img>
+                                                <div className="float-left">
+                                                    <GitHubButton
+                                                        href={g.repo}
+                                                        data-show-count="true"
+                                                        aria-label={`Star ${user}/${repo} on GitHub`}
+                                                    >
+                                                        Star
+                                                    </GitHubButton>
+                                                </div>
+                                                <div className="float-right">
+                                                    <GitHubButton
+                                                        href={g.repo}
+                                                        data-show-count="true"
+                                                        aria-label={`Fork ${user}/${repo} on GitHub`}
+                                                    >
+                                                        Fork
+                                                    </GitHubButton>
+                                                </div>
                                             </div>
                                             <h2 className="text-center">
                                                 <strong>
@@ -85,10 +88,13 @@ const GatsbyStartersPage = () => {
                                                 target="_blank"
                                                 href={g.repo}
                                             >
-                                                <GitHub size="24" />{" "}
-                                                <span className="text-center h6 font-weight-light">
+                                                <GitHubButton
+                                                    href={g.repo}
+                                                    data-size="large"
+                                                    // data-show-count="true"
+                                                >
                                                     Source
-                                                </span>
+                                                </GitHubButton>
                                             </a>
                                         </div>
                                     </div>

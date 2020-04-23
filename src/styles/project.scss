@@ -1,0 +1,96 @@
+.projects {
+    .each {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0.5rem 0;
+
+        &:hover {
+            background: #d8d2f3;
+            // border: 1px#624AD0 solid;
+        }
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        border-bottom: none;
+        margin: 0 1rem 0 0;
+        font-weight: 500;
+        color: #111;
+        padding: 0;
+        min-width: 110px;
+
+        a {
+            display: flex;
+            color: #111;
+            align-items: center;
+        }
+
+        .project-icon {
+            display: inline-block;
+            font-size: 2rem;
+            margin-right: 1rem;
+            img {
+                width: 64px;
+                margin: 0 20px;
+            }
+        }
+    }
+
+    .project-title {
+        display: inline-block;
+        min-width: 500px;
+    }
+    p {
+        display: none;
+        color: #111;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        order: 2;
+        margin-left: auto;
+        padding-right: 1em;
+    }
+
+    .button {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .projects {
+        .each {
+            display: flex;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #624ad0;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+
+        h2 {
+            width: 100px;
+            max-width: 150px;
+            font-size: 1.3rem;
+            margin-right: unset;
+        }
+
+        p {
+            display: block;
+            flex: 1;
+            margin: 0 1.5rem 0 0;
+            font-size: 1.2rem;
+        }
+
+        .button {
+            padding: 0.45rem 1.25rem;
+            font-size: 0.9rem;
+        }
+    }
+}
