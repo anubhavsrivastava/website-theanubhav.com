@@ -16,6 +16,7 @@ export default class NewsLetter extends Component {
                         <label htmlFor="bd-email">
                             Enter your awesome email
                         </label>
+                        <br />
                         <input
                             type="email"
                             name="email"
