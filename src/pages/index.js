@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PostLink from "../components/post-link";
+import NewsLetter from "../components/NewsLetter";
 
 const HomePage = ({
     data: {
@@ -22,13 +23,6 @@ const HomePage = ({
 
     return (
         <Layout title="Blogs" pageTitle="This is where I tell what I am upto!">
-            <Helmet>
-                <meta
-                    name="description"
-                    content={site.siteMetadata.description}
-                />
-            </Helmet>
-
             {/* <h2>Blog Posts</h2> */}
             <div className="container">{Posts}</div>
         </Layout>
