@@ -12,6 +12,9 @@ class ProjectIcon extends Component {
         if (iconType === "data") {
             return <img src={icon} />;
         }
+        if (iconType === "string") {
+            return <p className="icon">{icon} </p>;
+        }
 
         return "";
     }

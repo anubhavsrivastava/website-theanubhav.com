@@ -1,23 +1,39 @@
 [
     {
         "name": "whats-my-http-statuscode",
-        "description": " A UI Based interface to guide you to exact web api - http specification status your server should return for any request.",
-        "iconType": "data",
+        "description": " A Web APP to guide you to decide the HTTP status your server should return for any request.",
+        "iconType": "file",
         "category": "HTML,JavaScript,CSS",
         "repo": "https://github.com/anubhavsrivastava/whats-my-http-statuscode",
-        "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik0zNDMuNDY4LDIxMC4yNjRoLTE0LjI0NHYzMC4zNjFoMTQuMjQ0YzguNjMzLDAsMTIuOTUxLTQuNzk1LDEyLjk1MS0xNC4zOXYtMS41ODINCgkJCUMzNTYuNDE5LDIxNS4wNjIsMzUyLjEwMiwyMTAuMjY0LDM0My40NjgsMjEwLjI2NHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZD0iTTQ0Mi45NTQsMzcuOTAzSDY5LjA0NkMzMC45NzQsMzcuOTAzLDAsNjguODc2LDAsMTA2Ljk0OXYyOTguMTAzYzAsMzguMDcyLDMwLjk3NCw2OS4wNDYsNjkuMDQ2LDY5LjA0NmgzNzMuOTA4DQoJCQljMzguMDcyLDAsNjkuMDQ2LTMwLjk3NCw2OS4wNDYtNjkuMDQ2VjEwNi45NDlDNTEyLDY4Ljg3Nyw0ODEuMDI2LDM3LjkwMyw0NDIuOTU0LDM3LjkwM3ogTTMwNi43NzUsMTk3LjQ1OQ0KCQkJYzAtMS44MiwwLjc2OC0zLjQwMywyLjMwMy00Ljc0OGMxLjUzMy0xLjM0MywzLjU0OC0yLjAxNCw2LjA0NC0yLjAxNGgyOS43ODZjMTAuMjY0LDAsMTguNDksMi42NjIsMjQuNjc3LDcuOTg1DQoJCQljNi4xODcsNS4zMjQsOS4yOCwxMy42OTQsOS4yOCwyNS4xMDl2MC43MmMwLDExLjQxNy0zLjIzNywxOS44MzQtOS43MTIsMjUuMjUyYy02LjQ3NSw1LjQyMS0xNS4wMzYsOC4xMy0yNS42ODUsOC4xM2gtMTQuMjQ0DQoJCQl2MzEuMDgxYzAsMi4yMDctMS4xMDUsMy45MS0zLjMxLDUuMTA3Yy0yLjIwNywxLjIwMS00Ljg0NSwxLjc5OS03LjkxMywxLjc5OWMtMy4wNzEsMC01LjcwOS0wLjU5OC03LjkxNC0xLjc5OQ0KCQkJYy0yLjIwNy0xLjE5OC0zLjMxLTIuOS0zLjMxLTUuMTA3VjE5Ny40NTl6IE0yMjMuODk2LDE5My41NjJjMS4xNTEtMS45MTEsMi44MjgtMi44NjYsNS4wMzYtMi44NjZoNjIuMTYNCgkJCWMyLjIwNSwwLDMuODg2LDAuOTU1LDUuMDM2LDIuODY2czEuNzI3LDQuMTcxLDEuNzI3LDYuNzc5YzAsMi43OTctMC42LDUuMTQ4LTEuNzk5LDcuMDZjLTEuMiwxLjkxMS0yLjg1NiwyLjg2NC00Ljk2NCwyLjg2NA0KCQkJaC0xOS44NTd2NzguNjYxYzAsMi4yMjEtMS4xMDQsMy45MzctMy4zMSw1LjE0NGMtMi4yMDcsMS4yMDctNC44NDUsMS44MS03LjkxMywxLjgxYy0zLjA3MSwwLTUuNzA5LTAuNjAzLTcuOTE0LTEuODENCgkJCWMtMi4yMDctMS4yMDgtMy4zMDktMi45MjMtMy4zMDktNS4xNDR2LTc4LjY2MWgtMTkuODU2Yy0yLjExMSwwLTMuNzY2LTAuOTUzLTQuOTY0LTIuODY0Yy0xLjIwMS0xLjkxMS0xLjc5OS00LjI2My0xLjc5OS03LjA2DQoJCQlDMjIyLjE2OSwxOTcuNzMzLDIyMi43NDUsMTk1LjQ3MywyMjMuODk2LDE5My41NjJ6IE0xNzkuNzI1LDExMS43MzVjMC4wNS0wLjQ4LDAuMTItMC45NzIsMC4yMi0xLjQ1MQ0KCQkJYzAuMTAxLTAuNDgsMC4yMjEtMC45NjEsMC4zNi0xLjQzMWMwLjE0LTAuNDcxLDAuMzEtMC45MzIsMC41LTEuMzgyYzAuMTgtMC40NDksMC4zOS0wLjksMC42Mi0xLjMzDQoJCQljMC4yMjktMC40MzEsMC40OS0wLjg1MiwwLjc2LTEuMjYyYzAuMjcxLTAuNDEsMC41NjEtMC44MTEsMC44NzEtMS4xODFjMC4zMS0wLjM5LDAuNjQtMC43NSwwLjk5MS0xLjEwMQ0KCQkJYzAuMzUtMC4zNTEsMC43MS0wLjY4MSwxLjEwMS0wLjk5MWMwLjM3LTAuMzExLDAuNzcyLTAuNjAxLDEuMTgxLTAuODgxYzAuNDEtMC4yNzEsMC44MzEtMC41MjEsMS4yNjItMC43NQ0KCQkJYzAuNDMtMC4yMywwLjg4MS0wLjQ0LDEuMzMxLTAuNjJjMC40NDktMC4xOSwwLjkxLTAuMzYsMS4zODEtMC41YzAuNDctMC4xNDEsMC45NTEtMC4yNiwxLjQzMS0wLjM2DQoJCQljMC40OC0wLjEsMC45NzEtMC4xNywxLjQ1MS0wLjIyYzQuNDQyLTAuNDUsOC45NTYsMS4xODEsMTIuMDg4LDQuMzIzYzAuMzUsMC4zNSwwLjY4LDAuNzExLDAuOTkxLDEuMTAxDQoJCQljMC4zMSwwLjM3LDAuNjA5LDAuNzcxLDAuODgxLDEuMTgxYzAuMjcsMC40MSwwLjUyLDAuODMxLDAuNzUxLDEuMjYyYzAuMjI5LDAuNDMsMC40MzksMC44ODEsMC42MywxLjMzDQoJCQljMC4xOCwwLjQ1LDAuMzUsMC45MTEsMC40OSwxLjM4MmMwLjE0LDAuNDcsMC4yNywwLjk1LDAuMzU5LDEuNDMxYzAuMTAxLDAuNDc5LDAuMTcsMC45NzEsMC4yMiwxLjQ1MQ0KCQkJYzAuMDUxLDAuNDg5LDAuMDgsMC45OSwwLjA4LDEuNDhjMCwwLjQ5LTAuMDI5LDAuOTgxLTAuMDgsMS40NzJjLTAuMDUsMC40ODktMC4xMTksMC45OC0wLjIyLDEuNDYxDQoJCQljLTAuMDksMC40NzktMC4yMiwwLjk1LTAuMzU5LDEuNDIxYy0wLjE0MSwwLjQ3LTAuMzExLDAuOTMxLTAuNDksMS4zODFjLTAuMTksMC40NS0wLjQsMC45LTAuNjMsMS4zMzENCgkJCWMtMC4yMywwLjQzLTAuNDgsMC44Ni0wLjc1MSwxLjI2MWMtMC4yNzEsMC40MS0wLjU3LDAuODExLTAuODgxLDEuMTljLTAuMzExLDAuMzgxLTAuNjQxLDAuNzUxLTAuOTkxLDEuMDkyDQoJCQljLTAuMzQsMC4zNS0wLjcxMSwwLjY4LTEuMDkxLDAuOTljLTAuMzgxLDAuMzExLTAuNzgxLDAuNjEtMS4xOTEsMC44ODJjLTAuNCwwLjI3LTAuODMxLDAuNTItMS4yNjEsMC43NQ0KCQkJYy0wLjQzMSwwLjIyOS0wLjg4MSwwLjQzOS0xLjMzMSwwLjYzYy0wLjQ1LDAuMTgtMC45MTEsMC4zNS0xLjM4MSwwLjQ4OWMtMC40NzEsMC4xNS0wLjk1MSwwLjI3MS0xLjQyMSwwLjM2DQoJCQljLTAuNDgsMC4xLTAuOTcyLDAuMTctMS40NjEsMC4yMmMtMC40OSwwLjA1MS0wLjk4MSwwLjA4LTEuNDcyLDAuMDhjLTAuNDg5LDAtMC45OS0wLjAyOS0xLjQ4LTAuMDgNCgkJCWMtMC40OC0wLjA1LTAuOTcxLTAuMTItMS40NTEtMC4yMmMtMC40NzktMC4wOS0wLjk2MS0wLjIxLTEuNDMxLTAuMzZjLTAuNDYtMC4xNC0wLjkzMi0wLjMxLTEuMzgxLTAuNDg5DQoJCQljLTAuNDUtMC4xOS0wLjkwMS0wLjQtMS4zMzEtMC42M2MtMC40MzEtMC4yMy0wLjg1Mi0wLjQ4LTEuMjYyLTAuNzVjLTAuNDA5LTAuMjcxLTAuODExLTAuNTctMS4xODEtMC44ODINCgkJCWMtMC4zOC0wLjMxLTAuNzUtMC42NC0xLjEwMS0wLjk5Yy0wLjM1MS0wLjM0MS0wLjY4MS0wLjcxLTAuOTkxLTEuMDkyYy0wLjMxLTAuMzgtMC42LTAuNzc5LTAuODcxLTEuMTkNCgkJCWMtMC4yNy0wLjQtMC41My0wLjgzMS0wLjc2LTEuMjYxYy0wLjIzLTAuNDMxLTAuNDQtMC44ODEtMC42Mi0xLjMzMWMtMC4xOS0wLjQ1LTAuMzYtMC45MTEtMC41LTEuMzgxDQoJCQljLTAuMTQtMC40NzEtMC4yNi0wLjk0MS0wLjM2LTEuNDIxYy0wLjEtMC40OC0wLjE3LTAuOTcyLTAuMjItMS40NjFjLTAuMDUtMC40OS0wLjA3LTAuOTgxLTAuMDctMS40NzINCgkJCVMxNzkuNjc2LDExMi4yMjQsMTc5LjcyNSwxMTEuNzM1eiBNMjEzLjEwNCwxOTAuNjk2YzIuMjA1LDAsMy44ODYsMC45NTUsNS4wMzYsMi44NjZjMS4xNTEsMS45MTEsMS43MjcsNC4xNzEsMS43MjcsNi43NzkNCgkJCWMwLDIuNzk3LTAuNiw1LjE0OC0xLjc5OSw3LjA2Yy0xLjIsMS45MTEtMi44NTYsMi44NjQtNC45NjQsMi44NjRoLTE5Ljg1N3Y3OC42NjFjMCwyLjIyMS0xLjEwNCwzLjkzNy0zLjMxLDUuMTQ0DQoJCQljLTIuMjA3LDEuMjA3LTQuODQ1LDEuODEtNy45MTMsMS44MWMtMy4wNzEsMC01LjcwOS0wLjYwMy03LjkxNC0xLjgxYy0yLjIwNy0xLjIwOC0zLjMwOS0yLjkyMy0zLjMwOS01LjE0NHYtNzguNjYxaC0xOS44NTcNCgkJCWMtMi4xMTEsMC0zLjc2Ni0wLjk1My00Ljk2NC0yLjg2NGMtMS4yMDEtMS45MTEtMS43OTktNC4yNjMtMS43OTktNy4wNmMwLTIuNjA4LDAuNTc1LTQuODY3LDEuNzI3LTYuNzc5DQoJCQljMS4xNTItMS45MTEsMi44MjgtMi44NjYsNS4wMzYtMi44NjZIMjEzLjEwNHogTTExOS42ODUsMTExLjczNWMwLjA1LTAuNDgsMC4xMi0wLjk3MiwwLjIyLTEuNDUxDQoJCQljMC4xMDEtMC40OCwwLjIyMS0wLjk2MSwwLjM2LTEuNDMxYzAuMTQtMC40NzEsMC4zMS0wLjkzMiwwLjUtMS4zODJjMC4xOC0wLjQ0OSwwLjM5LTAuOSwwLjYyLTEuMzMNCgkJCWMwLjIyOS0wLjQzMSwwLjQ3OS0wLjg1MiwwLjc1LTEuMjYyYzAuMjgtMC40MSwwLjU3LTAuODExLDAuODgxLTEuMTgxYzAuMzEtMC4zOSwwLjY0LTAuNzUsMC45OTEtMS4xMDENCgkJCWMwLjM1LTAuMzUxLDAuNzEtMC42ODEsMS4xMDEtMC45OTFjMC4zNy0wLjMxMSwwLjc3Mi0wLjYwMSwxLjE4MS0wLjg4MWMwLjQxLTAuMjcxLDAuODMxLTAuNTIxLDEuMjYyLTAuNzUNCgkJCWMwLjQzLTAuMjMsMC44ODEtMC40NCwxLjMzMS0wLjYyYzAuNDQ5LTAuMTksMC45MS0wLjM2LDEuMzgxLTAuNWMwLjQ3LTAuMTQxLDAuOTUxLTAuMjYsMS40MzEtMC4zNg0KCQkJYzAuNDgtMC4xLDAuOTcxLTAuMTcsMS40NTEtMC4yMmMwLjk4LTAuMSwxLjk3MS0wLjEsMi45NTIsMGMwLjQ4OSwwLjA1LDAuOTgsMC4xMiwxLjQ2MSwwLjIyYzAuNDc5LDAuMTAxLDAuOTUsMC4yMiwxLjQyMSwwLjM2DQoJCQljMC40NywwLjE0LDAuOTMxLDAuMzEsMS4zODEsMC41YzAuNDUsMC4xOCwwLjksMC4zOSwxLjMzMSwwLjYyYzAuNDMsMC4yMjksMC44NiwwLjQ3OSwxLjI2MSwwLjc1DQoJCQljMC40MSwwLjI3OSwwLjgxMSwwLjU2OSwxLjE5MSwwLjg4MWMwLjM4LDAuMzEsMC43NSwwLjY0LDEuMDkxLDAuOTkxYzAuMzUsMC4zNSwwLjY4LDAuNzExLDAuOTkxLDEuMTAxDQoJCQljMC4zMSwwLjM3LDAuNjA5LDAuNzcxLDAuODgxLDEuMTgxYzAuMjcsMC40MSwwLjUyLDAuODMxLDAuNzUsMS4yNjJjMC4yMjksMC40MywwLjQzOSwwLjg4MSwwLjYzLDEuMzMNCgkJCWMwLjE4LDAuNDUsMC4zNSwwLjkxMSwwLjQ5LDEuMzgyYzAuMTQ5LDAuNDcsMC4yNywwLjk1LDAuMzU5LDEuNDMxYzAuMTAxLDAuNDc5LDAuMTcsMC45NzEsMC4yMiwxLjQ1MQ0KCQkJYzAuMDUxLDAuNDg5LDAuMDgsMC45OSwwLjA4LDEuNDhjMCwwLjQ5LTAuMDI5LDAuOTgxLTAuMDgsMS40NzJjLTAuMDUsMC40ODktMC4xMTksMC45OC0wLjIyLDEuNDYxDQoJCQljLTAuMDksMC40NzktMC4yMSwwLjk1LTAuMzU5LDEuNDIxYy0wLjE0MSwwLjQ3LTAuMzExLDAuOTMxLTAuNDksMS4zODFjLTAuMTksMC40NS0wLjQsMC45LTAuNjMsMS4zMzENCgkJCWMtMC4yMywwLjQzLTAuNDgsMC44Ni0wLjc1LDEuMjYxYy0wLjI3MSwwLjQxLTAuNTcsMC44MTEtMC44ODEsMS4xOWMtMC4zMTEsMC4zODEtMC42NDEsMC43NTEtMC45OTEsMS4wOTINCgkJCWMtMC4zNCwwLjM1LTAuNzExLDAuNjgtMS4wOTEsMC45OWMtMC4zODEsMC4zMTEtMC43ODEsMC42MS0xLjE5MSwwLjg4MmMtMC40LDAuMjctMC44MzEsMC41Mi0xLjI2MSwwLjc1DQoJCQljLTAuNDMxLDAuMjI5LTAuODgxLDAuNDM5LTEuMzMxLDAuNjNjLTAuNDUsMC4xOC0wLjkxMSwwLjM1LTEuMzgxLDAuNDg5Yy0wLjQ3MSwwLjE1LTAuOTQxLDAuMjcxLTEuNDIxLDAuMzYNCgkJCWMtMC40OCwwLjEtMC45NzIsMC4xNy0xLjQ2MSwwLjIyYy0wLjQ5LDAuMDUxLTAuOTgxLDAuMDgtMS40NzIsMC4wOGMtMC40ODksMC0wLjk5LTAuMDI5LTEuNDgtMC4wOA0KCQkJYy0wLjQ4LTAuMDUtMC45ODEtMC4xMi0xLjQ1MS0wLjIyYy0wLjQ3OS0wLjA5LTAuOTYxLTAuMjEtMS40MzEtMC4zNmMtMC40NzEtMC4xNC0wLjkzMi0wLjMxLTEuMzgxLTAuNDg5DQoJCQljLTAuNDUtMC4xOS0wLjkwMS0wLjQtMS4zMzEtMC42M2MtMC40MzEtMC4yMy0wLjg1Mi0wLjQ4LTEuMjYyLTAuNzVjLTAuNDA5LTAuMjcxLTAuODExLTAuNTctMS4xODEtMC44ODINCgkJCWMtMC4zOS0wLjMxLTAuNzUtMC42NC0xLjEwMS0wLjk5Yy0wLjM1MS0wLjM0MS0wLjY4MS0wLjcxLTAuOTkxLTEuMDkyYy0wLjMxLTAuMzgtMC42LTAuNzc5LTAuODgxLTEuMTkNCgkJCWMtMC4yNzEtMC40LTAuNTIxLTAuODMxLTAuNzUtMS4yNjFjLTAuMjMtMC40MzEtMC40NC0wLjg4MS0wLjYyLTEuMzMxYy0wLjE5LTAuNDUtMC4zNi0wLjkxMS0wLjUtMS4zODENCgkJCWMtMC4xNC0wLjQ3MS0wLjI2LTAuOTQxLTAuMzYtMS40MjFjLTAuMS0wLjQ4LTAuMTctMC45NzItMC4yMi0xLjQ2MWMtMC4wNS0wLjQ5LTAuMDctMC45ODEtMC4wNy0xLjQ3Mg0KCQkJUzExOS42MzYsMTEyLjIyNCwxMTkuNjg1LDExMS43MzV6IE0xMTIuODE0LDE5Ny40NTljMC0yLjIwNiwxLjEwMi0zLjg4NiwzLjMxLTUuMDM2YzIuMjA2LTEuMTUsNC44NDItMS43MjYsNy45MTMtMS43MjYNCgkJCWMzLjA2OSwwLDUuNzA2LDAuNTc1LDcuOTE0LDEuNzI2YzIuMjA2LDEuMTUxLDMuMzA5LDIuODMxLDMuMzA5LDUuMDM2djkxLjUxNWMwLDIuMjA3LTEuMTA0LDMuOTEtMy4zMDksNS4xMDcNCgkJCWMtMi4yMDgsMS4yMDEtNC44NDUsMS43OTktNy45MTQsMS43OTljLTMuMDcxLDAtNS43MDgtMC41OTgtNy45MTMtMS43OTljLTIuMjA4LTEuMTk4LTMuMzEtMi45LTMuMzEtNS4xMDd2LTM4Ljk5NUg4NC4xOHYzOC45OTUNCgkJCWMwLDIuMjA3LTEuMTA1LDMuOTEtMy4zMSw1LjEwN2MtMi4yMDcsMS4yMDEtNC44NDUsMS43OTktNy45MTMsMS43OTljLTMuMDcxLDAtNS43MDktMC41OTgtNy45MTQtMS43OTkNCgkJCWMtMi4yMDctMS4xOTgtMy4zMS0yLjktMy4zMS01LjEwN3YtOTEuNTE1YzAtMi4yMDYsMS4xMDMtMy44ODYsMy4zMS01LjAzNmMyLjIwNi0xLjE1LDQuODQzLTEuNzI2LDcuOTE0LTEuNzI2DQoJCQljMy4wNjgsMCw1LjcwNiwwLjU3NSw3LjkxMywxLjcyNmMyLjIwNiwxLjE1MSwzLjMxLDIuODMxLDMuMzEsNS4wMzZ2MzUuMjUzaDI4LjYzNFYxOTcuNDU5eiBNNTkuODY2LDExNi4xNDgNCgkJCWMtMC4xLTAuNDgtMC4xNy0wLjk3Mi0wLjIyLTEuNDYxYy0wLjA1LTAuNDktMC4wNy0wLjk4MS0wLjA3LTEuNDcyczAuMDIxLTAuOTkxLDAuMDctMS40OGMwLjA1LTAuNDgsMC4xMi0wLjk3MiwwLjIyLTEuNDUxDQoJCQljMC4xMDEtMC40OCwwLjIyMS0wLjk2MSwwLjM2LTEuNDMxYzAuMTQtMC40NzEsMC4zMS0wLjkzMiwwLjQ5LTEuMzgyYzAuMTg5LTAuNDQ5LDAuMzk5LTAuOSwwLjYzLTEuMzMNCgkJCWMwLjIyOS0wLjQzMSwwLjQ3OS0wLjg1MiwwLjc1LTEuMjYyYzAuMjctMC40MSwwLjU3LTAuODExLDAuODgxLTEuMTgxYzAuMzEtMC4zOSwwLjY0LTAuNzUsMC45OTEtMS4xMDENCgkJCWMwLjM1LTAuMzUxLDAuNzEtMC42ODEsMS4xMDEtMC45OTFjMC4zNy0wLjMxMSwwLjc3Mi0wLjYwMSwxLjE4MS0wLjg4MWMwLjQxLTAuMjcxLDAuODMxLTAuNTIxLDEuMjYyLTAuNzUNCgkJCWMwLjQzLTAuMjMsMC44ODEtMC40NCwxLjMzMS0wLjYyYzAuNDQ5LTAuMTksMC45MS0wLjM2LDEuMzgxLTAuNWMwLjQ3LTAuMTQxLDAuOTUxLTAuMjYsMS40MzEtMC4zNg0KCQkJYzAuNDgtMC4xLDAuOTcxLTAuMTcsMS40NTEtMC4yMmMwLjk4LTAuMSwxLjk3MS0wLjEsMi45NTIsMGMwLjQ4OSwwLjA1LDAuOTgsMC4xMiwxLjQ2MSwwLjIyYzAuNDc5LDAuMTAxLDAuOTUsMC4yMiwxLjQyMSwwLjM2DQoJCQljMC40NywwLjE0LDAuOTMxLDAuMzEsMS4zODEsMC41YzAuNDUsMC4xOCwwLjksMC4zOSwxLjMzMSwwLjYyYzAuNDMsMC4yMjksMC44NiwwLjQ3OSwxLjI2MSwwLjc1DQoJCQljMC40MSwwLjI3OSwwLjgxMSwwLjU2OSwxLjE5MSwwLjg4MWMwLjM4LDAuMzEsMC43NSwwLjY0LDEuMDkxLDAuOTkxYzAuMzUsMC4zNSwwLjY4LDAuNzExLDAuOTkxLDEuMTAxDQoJCQljMC4zMSwwLjM3LDAuNjA5LDAuNzcxLDAuODgxLDEuMTgxYzAuMjcsMC40MSwwLjUyLDAuODMxLDAuNzUsMS4yNjJjMC4yMjksMC40MywwLjQzOSwwLjg4MSwwLjYzLDEuMzMNCgkJCWMwLjE4LDAuNDUsMC4zNSwwLjkxMSwwLjQ5LDEuMzgyYzAuMTQ5LDAuNDcsMC4yNywwLjk1LDAuMzU5LDEuNDMxYzAuMTAxLDAuNDc5LDAuMTcsMC45NzEsMC4yMiwxLjQ1MQ0KCQkJYzAuMDUxLDAuNDg5LDAuMDgsMC45OSwwLjA4LDEuNDhjMCwwLjQ5LTAuMDI5LDAuOTgxLTAuMDgsMS40NzJjLTAuMDUsMC40ODktMC4xMTksMC45OC0wLjIyLDEuNDYxDQoJCQljLTAuMDksMC40NzktMC4yMSwwLjk1LTAuMzU5LDEuNDIxYy0wLjE0MSwwLjQ3LTAuMzExLDAuOTMxLTAuNDksMS4zODFjLTAuMTksMC40NS0wLjQsMC45LTAuNjMsMS4zMzENCgkJCWMtMC4yMywwLjQzLTAuNDgsMC44Ni0wLjc1LDEuMjYxYy0wLjI3MSwwLjQxLTAuNTcsMC44MTEtMC44ODEsMS4xOWMtMC4zMTEsMC4zODEtMC42NDEsMC43NTEtMC45OTEsMS4wOTINCgkJCWMtMC4zNCwwLjM1LTAuNzEsMC42OC0xLjA5MSwwLjk5Yy0wLjM4MSwwLjMxMS0wLjc4MSwwLjYxLTEuMTkxLDAuODgyYy0wLjQsMC4yNy0wLjgzMSwwLjUyLTEuMjYxLDAuNzUNCgkJCWMtMC40MzEsMC4yMjktMC44ODEsMC40MzktMS4zMzEsMC42M2MtMC40NSwwLjE4LTAuOTExLDAuMzUtMS4zODEsMC40ODljLTAuNDcxLDAuMTUtMC45NDEsMC4yNzEtMS40MjEsMC4zNg0KCQkJYy0wLjQ4LDAuMS0wLjk3MiwwLjE3LTEuNDYxLDAuMjJjLTAuNDksMC4wNTEtMC45ODEsMC4wOC0xLjQ3MiwwLjA4Yy0wLjQ4OSwwLTAuOTktMC4wMjktMS40OC0wLjA4DQoJCQljLTAuNDgtMC4wNS0wLjk4MS0wLjEyLTEuNDUxLTAuMjJjLTAuNDc5LTAuMDktMC45NjEtMC4yMS0xLjQzMS0wLjM2Yy0wLjQ3MS0wLjE0LTAuOTMyLTAuMzEtMS4zODEtMC40ODkNCgkJCWMtMC40NS0wLjE5LTAuOTAxLTAuNC0xLjMzMS0wLjYzYy0wLjQzMS0wLjIzLTAuODUyLTAuNDgtMS4yNjItMC43NWMtMC40MDktMC4yNzEtMC44MTEtMC41Ny0xLjE4MS0wLjg4Mg0KCQkJYy0wLjM5LTAuMzEtMC43NS0wLjY0LTEuMTAxLTAuOTljLTAuMzUxLTAuMzQxLTAuNjgxLTAuNzEtMC45OTEtMS4wOTJjLTAuMzEtMC4zOC0wLjYxLTAuNzc5LTAuODgxLTEuMTkNCgkJCWMtMC4yNzEtMC40LTAuNTIxLTAuODMxLTAuNzUtMS4yNjFjLTAuMjMtMC40MzEtMC40NC0wLjg4MS0wLjYzLTEuMzMxYy0wLjE4MS0wLjQ1LTAuMzUxLTAuOTExLTAuNDktMS4zODENCgkJCUM2MC4wODcsMTE3LjA5Nyw1OS45NjcsMTE2LjYyNyw1OS44NjYsMTE2LjE0OHogTTQzNy4xNDYsMzU1LjEzM0g3NS4zODdjLTguMjksMC0xNS4wMS02LjcyLTE1LjAxLTE1LjAxczYuNzItMTUuMDEsMTUuMDEtMTUuMDENCgkJCWgzNjEuNzZjOC4yODksMCwxNS4wMSw2LjcyLDE1LjAxLDE1LjAxUzQ0NS40MzcsMzU1LjEzMyw0MzcuMTQ2LDM1NS4xMzN6IE00NDQuMzM0LDI4OS4wNTQNCgkJCWMtNi42MTgsNS41MTEtMTUuMzAyLDguMjY0LTI2LjA0NCw4LjI2NGMtOS4zMDYsMC0xNy40MTEtMS45MTctMjQuMzE4LTUuNzU1Yy02LjkwNi0zLjgzNi0xMC4zNi04LjE1Mi0xMC4zNi0xMi45NTENCgkJCWMwLTIuNjg1LDAuOTgyLTUuMzcxLDIuOTQ5LTguMDU3YzEuOTY1LTIuNjg2LDQuMjQ1LTQuMDI5LDYuODM1LTQuMDI5YzEuNDM5LDAsMy4wNDUsMC41ODIsNC44MiwxLjc0NA0KCQkJYzEuNzc0LDEuMTY1LDMuNDA0LDIuNDUzLDQuODkzLDMuODY3YzEuNDg1LDEuNDE3LDMuNTcyLDIuNzA1LDYuMjU5LDMuODY4YzIuNjg1LDEuMTY0LDUuNTE2LDEuNzQ0LDguNDg5LDEuNzQ0DQoJCQljMy43NDIsMCw3LjAwMi0wLjc5Miw5Ljc4NS0yLjM3NWMyLjc4MS0xLjU4Miw0LjE3My0zLjk1Nyw0LjE3My03LjEyMmMwLTMuMTY2LTEuNTYtNS45NDctNC42NzYtOC4zNDcNCgkJCWMtMy4xMTgtMi4zOTctNi45MDctNC41NzktMTEuMzY4LTYuNTQ2Yy00LjQ2LTEuOTY1LTguOTQ1LTQuMTc0LTEzLjQ1My02LjYxOWMtNC41MS0yLjQ0Ni04LjMyNC01LjkyMi0xMS40NC0xMC40MzINCgkJCWMtMy4xMTgtNC41MDgtNC42NzctOS44OC00LjY3Ny0xNi4xMTZjMC0xMC4xNjksMy41OTctMTcuNzcxLDEwLjc5Mi0yMi44MDdjNy4xOTQtNS4wMzUsMTUuODc1LTcuNTU0LDI2LjA0My03LjU1NA0KCQkJYzIuNDk0LDAsNS4xMDgsMC4xNDgsNy44NDIsMC40NDVjMi43MzQsMC4yOTYsNS44MDMsMC44NjUsOS4yMDksMS43MDZjMy40MDMsMC44NDEsNi4xODgsMi4xOTgsOC4zNDYsNC4wNzYNCgkJCWMyLjE1OCwxLjg3OSwzLjIzNyw0LjE1MywzLjIzNyw2LjgxOGMwLDIuNTM2LTAuNzkxLDUuMTY2LTIuMzc0LDcuODk2Yy0xLjU4MywyLjczLTMuNzY2LDQuMDk1LTYuNTQ3LDQuMDk1DQoJCQljLTEuMTUxLDAtMy41OTctMC45MTEtNy4zMzgtMi43MzRjLTMuNzQyLTEuODItNy44NjctMi43MzMtMTIuMzc1LTIuNzMzYy00Ljc5NywwLTguMzk2LDAuODQxLTEwLjc5MSwyLjUxOA0KCQkJYy0yLjM5OSwxLjY4LTMuNTk3LDMuNzE5LTMuNTk3LDYuMTE1YzAsMi4yMDgsMS4xMjYsNC4yMjMsMy4zODEsNi4wNDRjMi4yNTMsMS44MjMsNS4wNTksMy4zODEsOC40MTgsNC42NzYNCgkJCWMzLjM1NiwxLjI5Niw3LjAyNiwyLjk3NSwxMS4wMDcsNS4wMzZjMy45ODEsMi4wNjQsNy42NDksNC4zMTYsMTEuMDA4LDYuNzYzYzMuMzU2LDIuNDQ2LDYuMTYyLDUuODc3LDguNDE4LDEwLjI4OA0KCQkJYzIuMjUzLDQuNDEzLDMuMzgxLDkuNDQ5LDMuMzgxLDE1LjEwOUM0NTQuMjYzLDI3NS44NDQsNDUwLjk1MiwyODMuNTQ0LDQ0NC4zMzQsMjg5LjA1NHoiLz4NCgk8L2c+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg=="
+        "icon": "projects/http.svg"
     },
     {
         "name": "react-lineicons",
-        "description": "Simple react component for using lineicons in React application.",
+        "description": "Simple React component for using `lineicons` in React application.",
         "iconType": "file",
         "category": "JavaScript,CSS,HTML",
         "repo": "https://github.com/anubhavsrivastava/react-lineicons",
         "icon": "projects/reactlineicon.svg"
     },
     {
+        "name": "perceptible",
+        "description": "Detect visibility of DOM Elements",
+        "iconType": "file",
+        "category": "JavaScript,HTML",
+        "repo": "https://github.com/anubhavsrivastava/perceptible",
+        "icon": "projects/perceptible.png"
+    },
+    {
+        "name": "Liquid UI",
+        "description": "Storybook experiment - sample stoybook usage",
+        "iconType": "file",
+        "category": "JavaScript,CSS",
+        "repo": "https://github.com/anubhavsrivastava/Liquid",
+        "icon": ""
+    },
+    {
         "name": "blame-my-network",
-        "description": "Check whether a website is up or down only for your network",
+        "description": "Check whether a website is down only for your internet",
         "iconType": "file",
         "category": "JavaScript",
         "repo": "https://github.com/anubhavsrivastava/blame-my-network",
@@ -26,18 +42,18 @@
     {
         "name": "axios-data-unpacker",
         "description": "Axios interceptor that unpacks HTTP responses so that you can focus on actual server data",
-        "iconType": "file",
+        "iconType": "string",
         "category": "JavaScript",
         "repo": "https://github.com/anubhavsrivastava/axios-data-unpacker",
-        "icon": ""
+        "icon": "📭"
     },
     {
         "name": "axios-api-profiler",
-        "description": "Axios interceptor that profiles HTTP responses for time taken(including middleware time)",
-        "iconType": "file",
+        "description": "Axios interceptor that profiles HTTP responses for time taken (including middleware time)",
+        "iconType": "string",
         "category": "JavaScript",
         "repo": "https://github.com/anubhavsrivastava/axios-api-profiler",
-        "icon": ""
+        "icon": "⏳"
     },
     {
         "name": "leetcodeJS",
@@ -45,7 +61,7 @@
         "iconType": "file",
         "category": "JavaScript",
         "repo": "https://github.com/anubhavsrivastava/leetcodeJS",
-        "icon": ""
+        "icon": "avatar-developer.png"
     },
     {
         "name": "react-for-electron-only",
@@ -53,7 +69,7 @@
         "iconType": "file",
         "category": "JavaScript",
         "repo": "https://github.com/anubhavsrivastava/react-for-electron-only",
-        "icon": ""
+        "icon": "avatar-react.png"
     },
     {
         "name": "react-selffocus-element",
@@ -61,31 +77,15 @@
         "iconType": "file",
         "category": "JavaScript",
         "repo": "https://github.com/anubhavsrivastava/react-selffocus-element",
-        "icon": ""
-    },
-    {
-        "name": "perceptible",
-        "description": "Detect visibility of DOM Elements",
-        "iconType": "file",
-        "category": "JavaScript,HTML",
-        "repo": "https://github.com/anubhavsrivastava/perceptible",
-        "icon": ""
-    },
-    {
-        "name": "Liquid",
-        "description": "Storybook experiment - sample stoybook usage",
-        "iconType": "file",
-        "category": "JavaScript,CSS",
-        "repo": "https://github.com/anubhavsrivastava/Liquid",
-        "icon": ""
+        "icon": "avatar-react.png"
     },
     {
         "name": "favicongrab",
-        "description": "A module for fetching Favicon of any web site.",
+        "description": "A module for fetching Favicon Link of any web site.",
         "iconType": "file",
         "category": "JavaScript",
         "repo": "https://github.com/anubhavsrivastava/favicongrab",
-        "icon": ""
+        "icon": "projects/favicon.svg"
     },
     {
         "name": "favicon-downloader",
@@ -93,7 +93,7 @@
         "iconType": "file",
         "category": "JavaScript",
         "repo": "https://github.com/anubhavsrivastava/favicon-downloader",
-        "icon": ""
+        "icon": "projects/favicon-download.svg"
     },
     {
         "name": "favicon-downloader-cli",
@@ -101,7 +101,7 @@
         "iconType": "file",
         "category": "JavaScript",
         "repo": "https://github.com/anubhavsrivastava/favicon-downloader-cli",
-        "icon": ""
+        "icon": "projects/favicon-cli.svg"
     },
     {
         "name": "is-site-down",
@@ -109,14 +109,14 @@
         "iconType": "file",
         "category": "JavaScript",
         "repo": "https://github.com/anubhavsrivastava/is-site-down",
-        "icon": ""
+        "icon": "projects/is-site-down.svg"
     },
     {
         "name": "is-site-down-cli",
-        "description": "cli cmd to check if a site is down elsewhere in world",
+        "description": "CLI for is-site-down",
         "iconType": "file",
         "category": "JavaScript",
         "repo": "https://github.com/anubhavsrivastava/is-site-down-cli",
-        "icon": ""
+        "icon": "projects/is-site-down-cli.svg"
     }
 ]
