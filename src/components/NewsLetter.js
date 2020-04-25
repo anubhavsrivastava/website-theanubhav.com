@@ -18,17 +18,14 @@ export default class NewsLetter extends Component {
                         </label>
                         <br />
                         <input
+                            className="mr-4 mb-1"
                             type="email"
                             name="email"
-                            placeholder="gunther@friend.com"
+                            placeholder="gunther@awesomesite.com"
                             id="bd-email"
                         ></input>
                         <input type="hidden" value="1" name="embed"></input>
-                        <input
-                            className="ml-4"
-                            type="submit"
-                            value="Subscribe"
-                        ></input>
+                        <input type="submit" value="Subscribe"></input>
                     </div>
                     {/* <p>
                     <a
