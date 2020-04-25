@@ -18,7 +18,6 @@
         font-weight: 500;
         color: #111;
         padding: 0;
-        min-width: 110px;
 
         a {
             display: flex;
@@ -43,10 +42,9 @@
 
     .project-title {
         display: inline-block;
-        min-width: 500px;
+        // min-width: 500px;
     }
     p {
-        display: none;
         color: #111;
         font-weight: normal;
         margin: 0;
@@ -95,6 +93,39 @@
         .button {
             padding: 0.45rem 1.25rem;
             font-size: 0.9rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .projects {
+        .each {
+            .project-title {
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .projects {
+        h2 {
+            .project-icon {
+                min-width: 48px;
+                margin-right: unset;
+                img {
+                    width: 48px;
+                    margin: 2px 5px;
+                }
+                p {
+                    &.icon {
+                        font-size: 48px;
+                        margin: 2px 5px;
+                    }
+                }
+            }
         }
     }
 }

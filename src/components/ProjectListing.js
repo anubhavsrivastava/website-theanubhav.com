@@ -41,7 +41,7 @@ export default class ProjectListing extends Component {
                         </h2>
                         <div className="project-title">
                             <p className="text-uppercase">{project.name}</p>
-                            {project.description}
+                            <span>{project.description}</span>
                         </div>
                         <div className="buttons">
                             {project.repo && (
