@@ -11,21 +11,6 @@ const SideProjects = () => {
     return (
         <Layout title="Side Projects" pageTitle="Projects">
             <div className="container mb-5">
-                {/* <div className="row">
-                    <div className="col-lg-12 col-md-10 mt-5">
-                        <h1> Projects</h1>
-                        <p>
-                            You can also check them on{" "}
-                            <a
-                                href="https://github.com/anubhavsrivastava"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Github
-                            </a>
-                        </p>
-                    </div>
-                </div> */}
                 <div className="row mt-5 justify-content-md-center">
                     <div className="col-lg-10 col-md-10">
                         <h5>#Gatsby Starters</h5>
