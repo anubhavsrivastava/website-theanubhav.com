@@ -37,6 +37,6 @@ Over the years (and couple of decades), my preferred platform for software devel
 
 ## 🌎&nbsp; Browser
 
--   [**Google Chrome**](https://www.google.com/chrome/browser/?extra=devchannel) —
+-   [**Google Chrome**](https://www.google.com/chrome/browser/?extra=devchannel)
 -   [**Google Chrome** (Dev Channel)](https://www.google.com/chrome/browser/?extra=devchannel) — for testing **only!**
 -   [**Brave** ](https://brave.com/) — for all personal use.
