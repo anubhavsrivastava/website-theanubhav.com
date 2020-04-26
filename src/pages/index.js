@@ -5,7 +5,6 @@ import PostLink from "../components/post-link";
 import heroImage from "../images/self.png";
 const HomePage = ({
     data: {
-        site,
         allMarkdownRemark: { edges },
     },
 }) => {
@@ -29,7 +28,8 @@ const HomePage = ({
                         <div className="subheading">
                             <p>
                                 👋 Hi! this is <strong>Anubhav</strong>, I am
-                                here to tell you about what I do.
+                                Developer, writer in my spare time, tech
+                                addicted, open-source lover.
                             </p>
                             <p>
                                 I blog about things related to web that I find

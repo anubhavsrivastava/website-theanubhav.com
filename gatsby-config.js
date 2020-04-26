@@ -157,7 +157,7 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `theAnubhav's Work`,
+                name: `theAnubhav's Web Space`,
                 short_name: `theAnubhav.com`,
                 start_url: `/`,
                 background_color: `#624ad0`,
