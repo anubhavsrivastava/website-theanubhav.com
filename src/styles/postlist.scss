@@ -1,6 +1,28 @@
 .post-preview {
     padding: 20px 0;
     border-bottom: 1px solid #eee;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    .post-title {
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .post-subtitle {
+        margin: 0;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+
+    .post-meta {
+        color: #808080;
+        font-size: 18px;
+        font-style: italic;
+        margin: 0 0 10px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -9,51 +31,44 @@
     }
 }
 
-.post-preview:last-child {
-    border-bottom: 0;
-}
-
-.post-preview .post-title {
-    font-size: 30px;
-    margin-top: 0;
-}
-.post-preview .post-subtitle {
-    margin: 0;
-    font-weight: 300;
-    margin-bottom: 10px;
-}
-.post-preview .post-meta,
 .post-heading .post-meta {
     color: #808080;
     font-size: 18px;
     font-style: italic;
     margin: 0 0 10px;
 }
+
 .post-preview .post-entry {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 .post-entry-container {
     display: inline-block;
     width: 100%;
 }
+
 .post-entry {
     width: 100%;
 }
+
 .post-image {
     float: right;
     height: 192px;
     width: 192px;
     margin-top: -35px;
     filter: grayscale(90%);
+
+    &:hover {
+        filter: grayscale(0%);
+    }
+
+    img {
+        border-radius: 100px;
+        height: 192px;
+        width: 192px;
+    }
 }
-.post-image:hover {
-    filter: grayscale(0%);
-}
-.post-image img {
-    border-radius: 100px;
-    height: 192px;
-    width: 192px;
-}
+
 .post-preview .post-read-more {
     font-weight: 800;
 }
@@ -71,18 +86,18 @@
     color: #999;
     font-size: 15px;
     margin-bottom: 30px;
-}
 
-.blog-tags a {
-    color: var(--primary-color);
-    text-decoration: none;
-    padding: 0px 5px;
-}
+    a {
+        color: var(--primary-color);
+        text-decoration: none;
+        padding: 0px 5px;
 
-.blog-tags a:hover {
-    border-radius: 2px;
-    color: var(primary-color);
-    background-color: #eee;
+        &:hover {
+            border-radius: 2px;
+            color: var(primary-color);
+            background-color: #eee;
+        }
+    }
 }
 
 .post-preview .blog-tags {
@@ -97,13 +112,15 @@
 }
 
 @media only screen and (max-width: 500px) {
-    .post-image,
-    .post-image img {
+    .post-image {
         height: 100px;
         width: 100px;
-    }
 
-    .post-image {
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
         width: 100%;
         text-align: center;
         margin-top: 0;
