@@ -23,6 +23,7 @@ const SideProjects = () => {
                                     iconType: "file",
                                     category: "JavaScript",
                                     url: "/gatsby",
+                                    internal: true,
                                     repo: "",
                                     icon: "avatar-gatsby.svg",
                                 },

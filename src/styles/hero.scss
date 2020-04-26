@@ -1,0 +1,43 @@
+.main-content {
+    min-height: 90vh;
+    margin: auto;
+    align-items: center;
+    h1 {
+        &.huge {
+            font-size: 160px;
+        }
+    }
+}
+
+.theme-bg {
+    background-color: var(--primary-color); // #e0dbf6;
+    a {
+        color: var(--primary-text-color);
+    }
+    .nav-item {
+        a {
+            color: var(--primary-text-color);
+        }
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        h1 {
+            &.huge {
+                font-size: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .main-content {
+        h1 {
+            &.huge {
+                font-size: 80px;
+            }
+        }
+    }
+}

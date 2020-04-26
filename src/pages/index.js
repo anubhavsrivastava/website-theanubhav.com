@@ -1,10 +1,8 @@
 import React from "react";
-import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PostLink from "../components/post-link";
-import NewsLetter from "../components/NewsLetter";
-
+import heroImage from "../images/self.png";
 const HomePage = ({
     data: {
         site,
@@ -16,15 +14,49 @@ const HomePage = ({
         .map((edge) => (
             <div key={edge.node.id} className="row">
                 <div className="col-lg-12 col-md-10">
-                    <PostLink post={edge.node} />
+                    <PostLink post={edge.node} type={"small"} />
                 </div>
             </div>
         ));
 
     return (
-        <Layout title="Blogs" pageTitle="This is where I tell what I am upto!">
-            {/* <h2>Blog Posts</h2> */}
-            <div className="container">{Posts}</div>
+        <Layout title="Home">
+            <div className="container mt-5">
+                <div className="main-content row">
+                    <div className="col-lg-8 col-md-12 col-sm-12">
+                        <h1 className="huge">Hello,</h1>
+                        <h1 className="bold huge">World.</h1>
+                        <div className="subheading">
+                            <p>
+                                👋 Hi! this is <strong>Anubhav</strong>, I am
+                                here to tell you about what I do.
+                            </p>
+                            <p>
+                                I blog about things related to web that I find
+                                worth sharing with the community. I also share
+                                my side projects and stuff that I am currently
+                                working on.
+                            </p>
+                            <p>Thanks for dropping by!</p>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-10 col-sm-12">
+                        <img src={heroImage} />
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div className="container mt-5">
+                <h4>#Latest Posts</h4>
+                {Posts}
+                <div className="row w-100 clearfix">
+                    <div className="col-lg-12 col-md-10 ">
+                        <a href="/blogs" className="h4 float-right">
+                            View All Post
+                        </a>
+                    </div>
+                </div>
+            </div>
         </Layout>
     );
 };
@@ -40,6 +72,7 @@ export const pageQuery = graphql`
         }
         allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
+            limit: 3
             filter: {
                 frontmatter: {
                     template: { eq: "BlogPost" }

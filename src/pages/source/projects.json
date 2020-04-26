@@ -1,7 +1,7 @@
 [
     {
         "name": "whats-my-http-statuscode",
-        "description": " A Web APP to guide you to decide the HTTP status your server should return for any request.",
+        "description": " A Web APP to guide you to decide the HTTP status for your Web API.",
         "iconType": "file",
         "category": "HTML,JavaScript,CSS",
         "repo": "https://github.com/anubhavsrivastava/whats-my-http-statuscode",

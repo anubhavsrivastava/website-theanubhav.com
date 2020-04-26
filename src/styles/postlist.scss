@@ -17,11 +17,120 @@
         margin-bottom: 10px;
     }
 
+    .post-heading {
+        .post-meta {
+            color: #808080;
+            font-size: 18px;
+            font-style: italic;
+            margin: 0 0 10px;
+        }
+    }
+
+    .post-preview {
+        .post-entry {
+            font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial,
+                sans-serif;
+        }
+    }
+
+    .post-entry-container {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .post-entry {
+        width: 100%;
+    }
+
+    .post-image {
+        float: right;
+        height: 192px;
+        width: 192px;
+        margin-top: -35px;
+        filter: grayscale(90%);
+
+        &:hover {
+            filter: grayscale(0%);
+        }
+
+        img {
+            border-radius: 100px;
+            height: 192px;
+            width: 192px;
+        }
+    }
+
+    .post-preview .post-read-more {
+        font-weight: 800;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .post-preview .post-title {
+            font-size: 36px;
+        }
+    }
+
+    .blog-tags {
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #999;
+        font-size: 15px;
+        margin-bottom: 30px;
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            padding: 0px 5px;
+
+            &:hover {
+                border-radius: 2px;
+                color: var(primary-color);
+                background-color: #eee;
+            }
+        }
+    }
+
+    .post-preview .blog-tags {
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    @media only screen and (min-width: 768px) {
+        .post-preview .blog-tags {
+            margin-top: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .post-image {
+            height: 100px;
+            width: 100px;
+
+            img {
+                height: 100px;
+                width: 100px;
+            }
+
+            width: 100%;
+            text-align: center;
+            margin-top: 0;
+            float: left;
+        }
+    }
+
     .post-meta {
         color: #808080;
         font-size: 18px;
         font-style: italic;
         margin: 0 0 10px;
+    }
+
+    &.small {
+        padding: 5px 20px;
+        .blog-tags,
+        .post-subtitle,
+        .post-entry-container {
+            display: none;
+        }
     }
 }
 
@@ -29,113 +138,4 @@
     .post-preview {
         padding: 35px 0;
     }
-}
-
-.post-heading .post-meta {
-    color: #808080;
-    font-size: 18px;
-    font-style: italic;
-    margin: 0 0 10px;
-}
-
-.post-preview .post-entry {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-.post-entry-container {
-    display: inline-block;
-    width: 100%;
-}
-
-.post-entry {
-    width: 100%;
-}
-
-.post-image {
-    float: right;
-    height: 192px;
-    width: 192px;
-    margin-top: -35px;
-    filter: grayscale(90%);
-
-    &:hover {
-        filter: grayscale(0%);
-    }
-
-    img {
-        border-radius: 100px;
-        height: 192px;
-        width: 192px;
-    }
-}
-
-.post-preview .post-read-more {
-    font-weight: 800;
-}
-
-@media only screen and (min-width: 768px) {
-    .post-preview .post-title {
-        font-size: 36px;
-    }
-}
-
-/* --- Tags --- */
-
-.blog-tags {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #999;
-    font-size: 15px;
-    margin-bottom: 30px;
-
-    a {
-        color: var(--primary-color);
-        text-decoration: none;
-        padding: 0px 5px;
-
-        &:hover {
-            border-radius: 2px;
-            color: var(primary-color);
-            background-color: #eee;
-        }
-    }
-}
-
-.post-preview .blog-tags {
-    margin-top: 5px;
-    margin-bottom: 0;
-}
-
-@media only screen and (min-width: 768px) {
-    .post-preview .blog-tags {
-        margin-top: 10px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .post-image {
-        height: 100px;
-        width: 100px;
-
-        img {
-            height: 100px;
-            width: 100px;
-        }
-
-        width: 100%;
-        text-align: center;
-        margin-top: 0;
-        float: left;
-    }
-}
-
-hr.small {
-    max-width: 100px;
-    margin: 15px auto;
-    border-width: 4px;
-    border-color: inherit;
-    border-radius: 3px;
-}
-
-.page-heading {
-    text-align: center;
 }

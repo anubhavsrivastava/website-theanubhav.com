@@ -31,7 +31,7 @@ export default class ProjectListing extends Component {
                             <a
                                 className="project-link"
                                 href={project.url || project.repo}
-                                target="_blank"
+                                target={project.internal ? "_self" : "_blank"}
                                 rel="noopener noreferrer"
                             >
                                 <div className="project-icon">
@@ -57,7 +57,9 @@ export default class ProjectListing extends Component {
                                 <a
                                     className="button"
                                     href={project.url}
-                                    target="_blank"
+                                    target={
+                                        project.internal ? "_self" : "_blank"
+                                    }
                                     rel="noopener noreferrer"
                                 >
                                     Link

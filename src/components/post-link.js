@@ -3,17 +3,17 @@ import { kebabCase } from "lodash";
 
 // import { Link } from "gatsby";
 
-const PostLink = ({ post }) => {
+const PostLink = ({ post, type }) => {
     const { date, path, title, subtitle, gist, tag } = post.frontmatter;
     return (
-        <article className="post-preview">
+        <article className={`post-preview ${type}`}>
             <p className="post-meta">Posted on {date}</p>
             <a href={path}>
                 <h2 className="post-title">{title}</h2>
             </a>
             <h5 className="post-subtitle">{subtitle}</h5>
-            <div className="po2st-entry-container">
-                <span className="po2st-entry">{gist}</span>
+            <div className="post-entry-container">
+                <span className="post-esntry">{gist}</span>
             </div>
 
             <div className="blog-tags">

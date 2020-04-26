@@ -36,7 +36,7 @@ export default class Navigation extends Component {
                 <div className="container">
                     <a className="navbar-branddddd" href="/">
                         <img
-                            className="no-margin"
+                            className="m-0"
                             height="32"
                             src={logo}
                             alt="Logo - theAnubhav"
@@ -64,8 +64,8 @@ export default class Navigation extends Component {
                     >
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <a href="/" className="nav-link">
-                                    Home
+                                <a href="/blogs" className="nav-link">
+                                    Blogs
                                 </a>
                             </li>
                             <li className="nav-item">
