@@ -95,8 +95,15 @@ h1 {
 .no-margin {
     margin: unset;
 }
+
 a.color-white {
     color: #fff !important;
+}
+
+a.hover-white {
+    &:hover {
+        color: #fff !important;
+    }
 }
 
 ul.no-bullets {

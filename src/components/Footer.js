@@ -11,27 +11,24 @@ export default function Footer() {
                         <NewsLetter />
                     </div>
                     <div className="col-lg-3 col-xs-12 links">
-                        {/* <h4 className="mt-lg-0 mt-sm-3">Links</h4>
-                        <ul className="m-0 p-0">
-                            <li>
-                                - <a href="#">Lorem ipsum</a>
+                        <h4 className="mt-lg-0 mt-sm-3"></h4>
+                        <ul className="m-0 p-0 no-bullets">
+                            <li className="m-0 p-0">
+                                <a className="hover-white" href="/uses">
+                                    Uses
+                                </a>
                             </li>
-                            <li>
-                                - <a href="#">Nam mauris velit</a>
+                            <li className="m-0 p-0">
+                                <a className="hover-white" href="/sponsor">
+                                    Sponsor Me
+                                </a>
                             </li>
-                            <li>
-                                - <a href="#">Etiam vitae mauris</a>
+                            <li className="m-0 p-0">
+                                <a className="hover-white" href="/thanks">
+                                    Supporters
+                                </a>
                             </li>
-                            <li>
-                                - <a href="#">Fusce scelerisque</a>
-                            </li>
-                            <li>
-                                - <a href="#">Sed faucibus</a>
-                            </li>
-                            <li>
-                                - <a href="#">Mauris efficitur nulla</a>
-                            </li>
-                        </ul> */}
+                        </ul>
                     </div>
                     <div className="col-lg-4 col-xs-12 ">
                         <ul className="list-inline  mx-auto mt-3">
