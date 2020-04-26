@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import { Link } from "gatsby";
 import { ExternalLink, Menu } from "react-feather";
-
+import logo from "../images/logo/logo_white.png";
 export default class Navigation extends Component {
     constructor(props) {
         super(props);
@@ -34,7 +34,14 @@ export default class Navigation extends Component {
         return (
             <nav className={`navbar navbar-expand-lg theme-bg`} id="mainNav">
                 <div className="container">
-                    <a className="navbar-brand"></a>
+                    <a className="navbar-branddddd" href="/">
+                        <img
+                            className="no-margin"
+                            height="32"
+                            src={logo}
+                            alt="Logo - theAnubhav"
+                        />
+                    </a>
                     <button
                         onClick={(_) => this.toggleMenu(!openMenu)}
                         className={`navbar-toggler navbar-toggler-right ${
