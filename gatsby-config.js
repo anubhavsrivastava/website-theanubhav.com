@@ -38,6 +38,13 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-source-rss-feed`,
+            options: {
+                url: `https://devtips.theanubhav.com/rss.xml`,
+                name: `Devtips`,
+            },
+        },
+        {
             resolve: "gatsby-plugin-feed",
             options: {
                 query: `

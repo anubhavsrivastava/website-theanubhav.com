@@ -1,8 +1,6 @@
 import React from "react";
 import { kebabCase } from "lodash";
 
-// import { Link } from "gatsby";
-
 const PostLink = ({ post, type }) => {
     const { date, path, title, subtitle, gist, tag } = post.frontmatter;
     return (
@@ -27,16 +25,6 @@ const PostLink = ({ post, type }) => {
                 })}
             </div>
         </article>
-        // <article className="card ">
-        //     <header>
-        //         <h2 className="post-title">
-        //             <Link to={post.frontmatter.path} className="post-link">
-        //                 {post.frontmatter.title}
-        //             </Link>
-        //         </h2>
-        //         <div className="post-meta">{post.frontmatter.date}</div>
-        //     </header>
-        // </article>
     );
 };
 export default PostLink;

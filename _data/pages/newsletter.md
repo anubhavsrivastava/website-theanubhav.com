@@ -1,7 +1,7 @@
 ---
 template: Page
 path: /newsletter
-title: Newsletter
+title: 🗞 Newsletter
 draft: false
 ---
 
