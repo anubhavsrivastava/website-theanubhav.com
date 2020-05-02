@@ -4,6 +4,8 @@ import Layout from "../components/Layout";
 import PostLink from "../components/post-link";
 import heroImage from "../images/self.png";
 import DevTipsLink from "../components/DevTipsLink";
+import Flip from "react-reveal/Flip";
+import Fade from "react-reveal/Fade";
 const HomePage = ({
     data: {
         allMarkdownRemark: { edges },
@@ -35,21 +37,31 @@ const HomePage = ({
             <div className="container mt-5">
                 <div className="main-content row">
                     <div className="col-lg-8 col-md-12 col-sm-12">
-                        <h1 className="huge">Hello,</h1>
-                        <h1 className="bold huge">World.</h1>
+                        <h1 className="huge">
+                            <Flip right cascade>
+                                Hello,
+                            </Flip>
+                        </h1>
+                        <h1 className="bold huge">
+                            <Flip right cascade>
+                                World.
+                            </Flip>
+                        </h1>
                         <div className="subheading">
-                            <p>
-                                👋 Hi! this is <strong>Anubhav</strong>, I am
-                                Developer, writer in my spare time, tech
-                                addicted, open-source lover.
-                            </p>
-                            <p>
-                                I blog about things related to web that I find
-                                worth sharing with the community. I also share
-                                my side projects and stuff that I am currently
-                                working on.
-                            </p>
-                            <p>Thanks for dropping by!</p>
+                            <Fade bottom>
+                                <p>
+                                    👋 Hi! this is <strong>Anubhav</strong>, I
+                                    am Developer, writer in my spare time, tech
+                                    addicted, open-source lover.
+                                </p>
+                                <p>
+                                    I blog about things related to web that I
+                                    find worth sharing with the community. I
+                                    also share my side projects and stuff that I
+                                    am currently working on.
+                                </p>
+                                <p>Thanks for dropping by!</p>
+                            </Fade>
                         </div>
                     </div>
                     <div className="col-lg-4 col-md-10 col-sm-12">
@@ -59,32 +71,36 @@ const HomePage = ({
             </div>
             <hr />
             <div className="container mt-5">
-                <h4>#Latest Posts</h4>
-                {Posts}
-                <div className="row w-100 clearfix">
-                    <div className="col-lg-12 col-md-10 ">
-                        <a href="/blogs" className="h4 float-right">
-                            View All Post
-                        </a>
+                <Fade bottom>
+                    <h4>#Latest Posts</h4>
+                    {Posts}
+                    <div className="row w-100 clearfix">
+                        <div className="col-lg-12 col-md-10 ">
+                            <a href="/blogs" className="h4 float-right">
+                                View All Post
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </Fade>
             </div>
             <hr />
             <div className="container mt-5">
-                <h4>#Devtips</h4>
-                {Tips}
-                <div className="row w-100 clearfix">
-                    <div className="col-lg-12 col-md-10 ">
-                        <a
-                            href="https://devtips.theanubhav.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="h4 float-right"
-                        >
-                            View All Tips
-                        </a>
+                <Fade bottom>
+                    <h4>#Devtips</h4>
+                    {Tips}
+                    <div className="row w-100 clearfix">
+                        <div className="col-lg-12 col-md-10 ">
+                            <a
+                                href="https://devtips.theanubhav.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="h4 float-right"
+                            >
+                                View All Tips
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </Fade>
             </div>
         </Layout>
     );

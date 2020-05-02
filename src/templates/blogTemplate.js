@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import "../styles/prismjs/custom.css";
 import "prismjs/themes/prism.css";
 import { Disqus } from "gatsby-plugin-disqus";
+import Fade from "react-reveal/Fade";
 // import "prismjs/plugins/line-numbers/prism-line-numbers.css";
 export default function Template({
     data, // this prop will be injected by the GraphQL query below.
@@ -34,26 +35,28 @@ export default function Template({
                     <div className="row">
                         <div className="col-lg-12 col-md-10">
                             <div>
-                                <h1 style={{ fontSize: "3em" }}>
-                                    {title ? title : <br />}{" "}
-                                </h1>
+                                <Fade bottom>
+                                    <h1 style={{ fontSize: "3em" }}>
+                                        {title ? title : <br />}{" "}
+                                    </h1>
 
-                                {subtitle ? (
-                                    <h3
-                                        style={{
-                                            fontStyle: "italic",
-                                            fontWeight: 300,
-                                        }}
-                                    >
-                                        {subtitle}
-                                    </h3>
-                                ) : (
-                                    ""
-                                )}
+                                    {subtitle ? (
+                                        <h3
+                                            style={{
+                                                fontStyle: "italic",
+                                                fontWeight: 300,
+                                            }}
+                                        >
+                                            {subtitle}
+                                        </h3>
+                                    ) : (
+                                        ""
+                                    )}
 
-                                <span className="post-meta">
-                                    Posted on {date}
-                                </span>
+                                    <span className="post-meta">
+                                        Posted on {date}
+                                    </span>
+                                </Fade>
                             </div>
                         </div>
                     </div>
