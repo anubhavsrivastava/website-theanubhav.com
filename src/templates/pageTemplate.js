@@ -11,19 +11,9 @@ export default function Template({
     const { path, title } = frontmatter;
 
     return (
-        <Layout title={title}>
+        <Layout title={title} pageTitle={title}>
             <div className="blog-post-container mt-5 mb-3">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12 col-md-10">
-                            <div>
-                                <h1 style={{ fontSize: "3em" }}>
-                                    {title ? title : <br />}{" "}
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                    <br />
                     <div className="row">
                         <div className="col-lg-12 col-md-10">
                             <div dangerouslySetInnerHTML={{ __html: html }} />

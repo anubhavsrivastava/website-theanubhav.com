@@ -28,6 +28,11 @@ export default function Footer() {
                                     Supporters
                                 </a>
                             </li>
+                            <li className="m-0 p-0">
+                                <a className="hover-white" href="/contact">
+                                    Contact
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div className="col-lg-4 col-xs-12 ">

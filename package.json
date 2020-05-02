@@ -41,6 +41,7 @@
     "react-feather": "^2.0.4",
     "react-github-btn": "^1.1.1",
     "react-helmet": "^5.2.1",
+    "react-reveal": "^1.2.2",
     "react-typography": "^0.16.19",
     "typography": "^0.16.19",
     "typography-theme-stow-lake": "^0.16.19",
