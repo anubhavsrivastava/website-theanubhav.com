@@ -11,7 +11,7 @@ export default function Template({
     data, // this prop will be injected by the GraphQL query below.
 }) {
     const { markdownRemark, site } = data; // data.markdownRemark holds your post data
-    const { frontmatter, html } = markdownRemark;
+    const { frontmatter, html, fields} = markdownRemark;
     const { date, path, title, subtitle, ghrepo } = frontmatter;
 
     let user = "";
@@ -55,6 +55,10 @@ export default function Template({
 
                                     <span className="post-meta">
                                         Posted on {date}
+                                    </span>
+                                    < br/>
+                                    <span className="pos-meta">
+                                        {Math.ceil(fields.readingTime.minutes+1)} minutes read
                                     </span>
                                 </Fade>
                             </div>
@@ -151,6 +155,13 @@ export const pageQuery = graphql`
                 tag
                 ghrepo
             }
+            fields {
+                
+                readingTime {
+                  text
+                  minutes
+                }
+              }
         }
     }
 `;
