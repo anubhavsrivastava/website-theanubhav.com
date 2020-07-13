@@ -33,6 +33,11 @@ export default function Footer() {
                                     Contact
                                 </a>
                             </li>
+                            <li className="m-0 p-0">
+                                <a className="hover-white" href="/newsletters">
+                                    Newsletter Archives
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div className="col-lg-4 col-xs-12 ">
@@ -96,14 +101,5 @@ export default function Footer() {
                 </div>
             </div>
         </div>
-    );
-}
-function Footer1() {
-    return (
-        <footer className="theme-bg">
-            <div className="container ">
-                <div className="row"></div>
-            </div>
-        </footer>
     );
 }

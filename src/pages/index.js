@@ -57,7 +57,7 @@ const HomePage = ({
                                 <p>
                                     I blog about things related to web that I
                                     find worth sharing with the community. I
-                                    also share my side projects and stuff that I
+                                    also showcase my side projects and stuff that I
                                     am currently working on.
                                 </p>
                                 <p>Thanks for dropping by!</p>

@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 var path = require("path");
 const createPostPages = require("./contentPages/create-blog-pages");
+const createNLPages = require("./contentPages/create-nl-pages");
 const createMainPages = require("./contentPages/create-pages");
 const createTagPages = require("./contentPages/create-tag-pages");
 const createCategoryPages = require("./contentPages/create-category-pages");
@@ -26,6 +27,7 @@ async function createPages({ actions, graphql, reporter }) {
     });
 
     await createPostPages(graphql, actions, reporter);
+    await createNLPages(graphql, actions, reporter);
     await createMainPages(graphql, actions, reporter);
     await createTagPages(graphql, actions, reporter);
     await createCategoryPages(graphql, actions, reporter);

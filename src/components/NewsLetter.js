@@ -1,27 +1,29 @@
 import React, { Component } from "react";
+import { HelpCircle } from "react-feather";
 
 export default class NewsLetter extends Component {
     render() {
         return (
             <div className="footer">
-                <h4> Join monthly Newsletter</h4>
+
+                <h4> Subscribe for newsletters <a className="color-white" href="/newsletter"><HelpCircle size="24" /></a></h4>
                 <form
                     action="https://buttondown.email/api/emails/embed-subscribe/theanubhav"
                     method="post"
                     target="popupwindow"
-                    onSubmit="window.open('https://buttondown.email/theanubhav', 'popupwindow')"
+                    // onSubmit={()=>window.open('https://buttondown.email/theanubhav', 'popupwindow')"
                     className="embeddable-buttondown-form"
                 >
                     <div className="form-group">
                         <label htmlFor="bd-email">
-                            Enter your awesome email
+                            Enter your awesome email address
                         </label>
                         <br />
                         <input
                             className="mr-4 mb-1"
                             type="email"
                             name="email"
-                            placeholder="gunther@awesomesite.com"
+                            placeholder="gelvinbelson@hooli.com"
                             id="bd-email"
                         ></input>
                         <input type="hidden" value="1" name="embed"></input>
