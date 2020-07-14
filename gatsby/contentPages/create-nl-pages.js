@@ -6,7 +6,7 @@ module.exports = async (graphql, actions, reporter) => {
     const { createPage } = actions;
 
     const newsLetterTemplate = await path.resolve(
-        `src/templates/newsLetterTemplate.js`
+        `src/templates/newsletterTemplate.js`
     );
 
     const result = await graphql(`
