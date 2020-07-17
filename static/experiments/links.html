@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target:custom</title>
+</head>
+
+<body>
+
+    <h4>1. Click on any link below, all will use the same browser tab/window (context)</h4>
+    <a href="https://google.com" target="newtabname">Google</a>
+    <a href="https://bing.com" target="newtabname">Bing</a>
+    <a href="https://duckduckgo.com" target="newtabname">DuckDuckGo</a>
+    <hr />
+
+    <h4>2. Click on any link below, all will use the same iframe (context)</h4>
+    <a href="https://about.theanubhav.com" target="iframename">about.theanubhav.com</a>
+    <a href="https://theanubhav.com" target="iframename">theanubhav.com</a>
+    <a href="https://bing.com" target="iframename">Bing</a>
+
+    <iframe style="margin-top:10px" src="http://" name="iframename" width="100%;" height="500px;">
+        asdf
+    </iframe>
+    <hr />
+
+
+    
+    <iframe id="frame1" style="margin-top:10px"  name="iframename" width="100%;" height="500px;">
+        asdf
+    </iframe>
+
+</body>
+
+<script type="text/javascript">
+    var html = `This is a iframe <hr/>
+    <h4>1. Click on any link below, all will use the same browser tab/window (context) and open in same context used in page top links in #1 </h4>
+    <a href="https://google.com" target="newtabname">Google</a>
+    <a href="https://bing.com" target="newtabname">Bing</a>
+    <a href="https://duckduckgo.com" target="newtabname">DuckDuckGo</a>
+   
+    <hr />
+    <h4>2. Click on any link below, all will use the parent tab (context)</h4>
+    <a href="https://about.theanubhav.com" target="_parent">about.theanubhav.com</a>
+    <a href="https://theanubhav.com" target="_parent">theanubhav.com</a>
+    <a href="https://bing.com" target="_parent">Bing</a>
+    
+    <hr />
+    `;
+    var iframe = document.querySelector('#frame1');
+    iframe.src = 'data:text/html,' + encodeURIComponent(html);
+</script>
+
+</html>
