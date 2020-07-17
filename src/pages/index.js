@@ -122,7 +122,7 @@ export const pageQuery = graphql`
         }
         allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
-            limit: 3
+            limit: 5
             filter: {
                 frontmatter: {
                     template: { eq: "BlogPost" }
