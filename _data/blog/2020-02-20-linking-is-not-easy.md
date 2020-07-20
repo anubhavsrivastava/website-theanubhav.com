@@ -429,7 +429,7 @@ There are two simple rules to make it work,
 -   User generated event (Even if a trigger is made to fire this event through code, browser may block the new window)
 -   Non-nested inner function (For example a function calling another function, which in turn calls another function which finally calls window.open() may result in being blocked)
 
-##### Tackling security in `window.open` function.
+##### Tackling security in `window.open` function
 
 Just like normal anchor links, a new site which is opened by the window.open function has a `window.opener` object pointing to the site which opened the new link.
 
